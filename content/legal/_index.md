@@ -82,6 +82,15 @@ layout: "mdpage"
     <div class="col-12 col-md-6">
       <div class="card border-0 shadow-sm h-100">
         <div class="card-body p-4">
+          <h5 class="card-title mb-2">Data Processing Agreement (DPA)</h5>
+          <p class="card-text text-muted mb-3">Art. 28 GDPR — Processor obligations, TOMs, sub-processors.</p>
+          <a class="link-primary" href="/legal/dpa/">Open</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body p-4">
           <h5 class="card-title mb-2">Accessibility Statement</h5>
           <p class="card-text text-muted mb-3">Our commitment to digital accessibility.</p>
           <a class="link-primary" href="/legal/accessibility/">Open</a>
