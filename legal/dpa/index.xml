@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Data Processing Agreement (DPA) on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/legal/dpa/</link><description>Recent content in Data Processing Agreement (DPA) on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 15 May 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://flinker.app/legal/dpa/index.xml" rel="self" type="application/rss+xml"/><item><title>Flinker Data Processing Agreement (v2026-05)</title><link>https://flinker.app/legal/dpa/v2026-05/</link><pubDate>Fri, 15 May 2026 00:00:00 +0200</pubDate><guid>https://flinker.app/legal/dpa/v2026-05/</guid><description>&lt;div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+ &lt;span class="badge text-bg-primary">Version: v2026-05&lt;/span>
+ &lt;span class="badge text-bg-light">Effective date: 2026-05-15&lt;/span>
+&lt;/div>
+&lt;div class="d-flex flex-wrap gap-2 mb-4">
+ &lt;a class="btn btn-outline-dark" href="https://flinker.app/legal/dpa/">Back to latest&lt;/a>
+ &lt;a class="btn btn-outline-dark" href="https://flinker.app/assets-flinker/legal/Flinker-DPA-v2026-05.pdf" target="_blank" rel="noopener">Download PDF&lt;/a>
+ &lt;a class="btn btn-outline-dark" href="#" onclick="window.print(); return false;">Print&lt;/a>
+&lt;/div>
+&lt;p>&lt;strong>What&amp;rsquo;s new in v2026-05:&lt;/strong> Initial publication of the Flinker Data Processing Agreement pursuant to Art. 28 GDPR.&lt;/p>
+&lt;h2 id="table-of-contents">Table of Contents&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="#s1">Subject Matter and Term&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s2">Nature and Purpose of Processing&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s3">Categories of Personal Data and Data Subjects&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s4">Obligations of the Processor&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s5">Obligations of the Controller&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s6">Instructions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s7">Confidentiality&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s8">Technical and Organisational Measures (TOMs)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s9">Sub-processors&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s10">Assistance with Data Subject Rights&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s11">Personal Data Breach Notification&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s12">Audit Rights and Evidence of Compliance&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s13">Deletion and Return of Data upon Termination&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s14">Transfers to Third Countries&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#s15">Final Provisions&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;style>
+ @media print {
+ a.btn, .btn { display: none !important; }
+ .badge { border: 1px solid #ccc !important; }
+ }
+&lt;/style>
+&lt;p>&lt;strong>Between:&lt;/strong> Flinker GmbH, Zittelstra&amp;szlig;e 7, 80796 Munich, Germany,
+Amtsgericht M&amp;uuml;nchen HRB 254870 (hereinafter &amp;ldquo;Processor&amp;rdquo;)&lt;br>
+&lt;strong>and:&lt;/strong> the customer identified in the Main Contract (hereinafter &amp;ldquo;Controller&amp;rdquo;)&lt;/p></description></item></channel></rss>
