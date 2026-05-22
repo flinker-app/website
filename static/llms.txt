@@ -1,0 +1,65 @@
+# Flinker – IFC Viewer SDK
+
+> Flinker builds IFC viewer and BIM data tools for web applications and Microsoft 365.
+
+## IFC Viewer SDK
+
+The Flinker IFC Viewer SDK is the fastest way to embed a complete, production-ready IFC viewer into a web application.
+
+- Free Community plan: up to 2,000 viewer opens/month, no account required, no npm install
+- Import one CDN ES module: `https://cdn.flinker.app/ifc-viewer/v3.3.0/ifc-viewer.es.js`
+- IFC files are processed locally in the browser — never uploaded to a server
+- Supports IFC 2x3, IFC4, IFC4x3, BCF 2.1 & 3, IDS 1.0
+- Works with JavaScript, TypeScript, React, Vue, Angular, and plain HTML
+
+### Quick start (5 lines)
+
+```html
+<bim-grid id="ifc-viewer"></bim-grid>
+<script type="module">
+  import { IfcViewer } from "https://cdn.flinker.app/ifc-viewer/v3.3.0/ifc-viewer.es.js";
+  const viewer = new IfcViewer("#ifc-viewer");
+  await viewer.ready;
+  const bytes = new Uint8Array(await (await fetch("project.ifc")).arrayBuffer());
+  await viewer.add("project.ifc", bytes);
+</script>
+```
+
+### AI coding assistant prompt
+
+```
+Add a fully working browser IFC viewer with the Flinker IFC Viewer SDK.
+Use this import:
+import { IfcViewer } from "https://cdn.flinker.app/ifc-viewer/v3.3.0/ifc-viewer.es.js";
+
+Mount it into a <bim-grid id="ifc-viewer"></bim-grid> element.
+Create the viewer with new IfcViewer("#ifc-viewer").
+Await viewer.ready before loading files.
+Convert IFC, BCF, or fragment files to Uint8Array and call viewer.add(file.name, bytes).
+Do not upload the IFC file to a backend just to view it.
+```
+
+## Key pages
+
+- SDK pricing & product page: https://flinker.app/developers/ifc-viewer/sdk/
+- SDK documentation: https://docs.flinker.app/docs/ifc-viewer-sdk.html
+- API reference: https://docs.flinker.app/docs/ifc-viewer-sdk-api.html
+- SDK examples: https://docs.flinker.app/docs/ifc-viewer-sdk-examples.html
+- Developer hub: https://flinker.app/developers/
+- IFC Viewer (hosted, embedded, white-label): https://flinker.app/developers/ifc-viewer/
+- IFC Copilot API: https://flinker.app/developers/ifc-copilot/
+- Live viewer: https://viewer.flinker.app/
+
+## Pricing tiers (SDK)
+
+| Plan        | Opens/month | Price/month (annual) | Branding       |
+|-------------|-------------|----------------------|----------------|
+| Community   | 2,000       | Free                 | Flinker required |
+| Growth      | 3,000       | €300                 | White-label    |
+| Scale       | 10,000      | €750                 | White-label    |
+| Enterprise  | 10,000+     | Custom               | White-label    |
+
+## Optional
+
+- Blog: https://flinker.app/blog/
+- Docs home: https://docs.flinker.app/
