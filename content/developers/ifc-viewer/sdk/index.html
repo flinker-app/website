@@ -1,8 +1,8 @@
 ---
-title: "IFC Viewer SDK – Free to Start | Flinker"
-description: "Embed a complete IFC viewer in your web app. Free community plan up to 2,000 model opens/month. No npm install, privacy-first, works with React, Vue, Angular."
+title: "IFC Viewer SDK – Free Forever, Commercial Use | Flinker"
+description: "Embed a complete IFC viewer in your web app. The Community tier is free forever with commercial use included, up to 2,000 model opens/month. No npm install, privacy-first, works with React, Vue, Angular."
 date: 2026-02-14
-lastmod: 2026-05-22
+lastmod: 2026-05-26
 url: "/developers/ifc-viewer/sdk/"
 layout: "single"
 disableTopSpacing: true
@@ -37,153 +37,6 @@ breadcrumb:
 
 <style>
   /* Pricing section scoped styles */
-  .calc-card {
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 40px;
-    background: #fff;
-    box-shadow: 0 10px 30px rgba(15,23,42,.06);
-    position: relative;
-    overflow: hidden;
-  }
-  .calc-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, var(--bs-primary), #10b981);
-    border-radius: 16px 16px 0 0;
-  }
-  .calc-label {
-    font-size: 12px;
-    font-weight: 700;
-    color: #64748b;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    margin-bottom: 28px;
-  }
-  .calc-slider-wrap { margin-bottom: 32px; }
-  .calc-slider-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 12px;
-  }
-  .calc-slider-title { font-size: 14px; color: #64748b; }
-  .calc-slider-value {
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--bs-emphasis-color, #0f172a);
-    transition: color 0.2s;
-  }
-  .calc-range {
-    -webkit-appearance: none;
-    width: 100%;
-    height: 6px;
-    background: #e2e8f0;
-    outline: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-  .calc-range::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 22px;
-    height: 22px;
-    background: var(--bs-primary, #007bff);
-    border-radius: 50%;
-    cursor: pointer;
-    transition: transform 0.15s;
-    box-shadow: 0 2px 8px rgba(0,123,255,0.3);
-  }
-  .calc-range::-webkit-slider-thumb:hover { transform: scale(1.15); }
-  .calc-range::-moz-range-thumb {
-    width: 22px;
-    height: 22px;
-    background: var(--bs-primary, #007bff);
-    border-radius: 50%;
-    cursor: pointer;
-    border: none;
-    box-shadow: 0 2px 8px rgba(0,123,255,0.3);
-  }
-  .calc-tick-labels {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8px;
-  }
-  .calc-tick-labels span {
-    font-size: 11px;
-    font-weight: 500;
-    color: #94a3b8;
-  }
-  .tier-rec {
-    border: 1px solid #e2e8f0;
-    border-radius: 16px;
-    padding: 24px 28px;
-    background: #f8fafc;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-    transition: all 0.3s ease;
-  }
-  .tier-rec.rec-community {
-    background: rgba(16,185,129,0.06);
-    border-color: rgba(16,185,129,0.25);
-  }
-  .tier-rec.rec-growth {
-    background: rgba(7,121,255,0.06);
-    border-color: rgba(7,121,255,0.25);
-  }
-  .tier-rec.rec-scale {
-    background: rgba(14,165,233,0.06);
-    border-color: rgba(14,165,233,0.25);
-  }
-  .tier-rec.rec-enterprise {
-    background: rgba(100,116,139,0.06);
-    border-color: rgba(100,116,139,0.25);
-  }
-  .rec-label {
-    font-size: 12px;
-    font-weight: 700;
-    color: #64748b;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 4px;
-  }
-  .rec-tier {
-    font-size: 24px;
-    font-weight: 700;
-    color: var(--bs-emphasis-color, #0f172a);
-    transition: color 0.3s;
-  }
-  .tier-rec.rec-community .rec-tier { color: #10b981; }
-  .tier-rec.rec-growth .rec-tier    { color: #0779FF; }
-  .tier-rec.rec-scale .rec-tier     { color: #0ea5e9; }
-  .tier-rec.rec-enterprise .rec-tier { color: #64748b; }
-  .rec-desc {
-    font-size: 13px;
-    color: #64748b;
-    line-height: 1.5;
-    margin-top: 2px;
-  }
-  .rec-amount {
-    font-size: 44px;
-    font-weight: 700;
-    line-height: 1;
-    color: var(--bs-primary, #007bff);
-    transition: all 0.3s ease;
-  }
-  .tier-rec.rec-community .rec-amount  { color: #10b981; }
-  .tier-rec.rec-growth .rec-amount     { color: #0779FF; }
-  .tier-rec.rec-scale .rec-amount      { color: #0ea5e9; }
-  .tier-rec.rec-enterprise .rec-amount { color: #64748b; font-size: 28px; }
-  .rec-period {
-    font-size: 13px;
-    font-weight: 500;
-    color: #94a3b8;
-    margin-top: 4px;
-    text-align: right;
-  }
   /* Plan cards */
   .plan {
     border: 1px solid #e2e8f0;
@@ -198,9 +51,23 @@ breadcrumb:
     transform: translateY(-3px);
     box-shadow: 0 14px 36px rgba(15,23,42,.1);
   }
+  .card-lift {
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .card-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(15,23,42,.10) !important;
+  }
   .plan-accent {
     border: 2px solid var(--bs-primary, #007bff);
     box-shadow: 0 10px 30px rgba(0,123,255,.12);
+  }
+  .chevron-arrow .bi-chevron-down {
+    transition: transform .2s ease;
+    display: inline-block;
+  }
+  a[aria-expanded="true"] .chevron-arrow .bi-chevron-down {
+    transform: rotate(180deg);
   }
   .plan-badge {
     position: absolute;
@@ -318,10 +185,6 @@ breadcrumb:
   .demo-iframe-wrap { overflow: hidden; background: #0f172a; }
   .demo-iframe-wrap iframe { display: block; border: none; }
   @media (max-width: 768px) {
-    .calc-card { padding: 24px 18px; }
-    .tier-rec { flex-direction: column; align-items: flex-start; }
-    .rec-amount { font-size: 36px; }
-    .rec-period { text-align: left; }
     .sdk-code-block { padding: 18px 16px; }
     .ai-prompt-block { padding: 18px 16px; }
     .demo-browser-bar .demo-url-bar { display: none; }
@@ -333,155 +196,137 @@ breadcrumb:
 <!-- ═══════════════════════════════════════════════════════════════════
      HERO
      ═══════════════════════════════════════════════════════════════════ -->
-<section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
+<section class="pt-lg-8 pt-5 pb-lg-8 pb-5 bg-primary bg-opacity-10 position-relative">
    <div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;"></div>
    <div class="container">
-      <div class="row align-items-center py-lg-8">
-         <div class="col-lg-8 offset-lg-2 text-center">
-            <span class="badge bg-primary mb-3">IFC Viewer SDK</span>
-            <h1 class="display-5">Embed a complete IFC viewer in any web app</h1>
-            <p class="lead">The Community plan is a permanent commercial tier. Use it for free up to 2,000 opens per month. No credit card, no npm install, no upload backend.</p>
-            <div class="d-flex flex-wrap justify-content-center gap-2 mt-4">
-               <span class="badge bg-success-subtle text-success px-3 py-2">IFC 2x3 · IFC4 · IFC4x3</span>
-               <span class="badge bg-primary-subtle text-primary px-3 py-2">BCF 2.1 &amp; 3</span>
-               <span class="badge bg-primary-subtle text-primary px-3 py-2">IDS 1.0</span>
-               <span class="badge border border-primary text-primary px-3 py-2">React · Vue · Angular · TS</span>
-            </div>
-            <div class="mt-5">
-               <a href="https://docs.flinker.app/docs/ifc-viewer-sdk.html" class="btn btn-primary me-2" target="_blank">Use for free</a>
+      <div class="row align-items-center g-5 flex-lg-nowrap">
+
+         <!-- Left: copy -->
+         <div class="col-lg-5 col-12">
+            <span class="badge bg-primary mb-4">IFC Viewer SDK</span>
+            <h1 class="display-5 mb-3">Embed a complete IFC viewer in any app</h1>
+            <p class="lead mb-5">Free forever, commercial use included. Up to 2,000 opens/month.</p>
+            <div class="d-flex flex-wrap gap-2 mb-6">
+               <a href="https://docs.flinker.app/docs/ifc-viewer-sdk.html" class="btn btn-primary" target="_blank">Use for free</a>
                <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-outline-dark">Talk to Sales</a>
             </div>
+            <!-- Spec items -->
+            <ul class="list-unstyled d-flex flex-column gap-2 mb-0 mt-1">
+               <li class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check2-circle text-primary flex-shrink-0"></i>
+                  <span class="small">IFC 2x3, IFC4, IFC4x3</span>
+               </li>
+               <li class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check2-circle text-primary flex-shrink-0"></i>
+                  <span class="small">BCF 2.1 &amp; 3</span>
+               </li>
+               <li class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check2-circle text-primary flex-shrink-0"></i>
+                  <span class="small">IDS 1.0</span>
+               </li>
+               <li class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check2-circle text-primary flex-shrink-0"></i>
+                  <span class="small">React, Vue, Angular, TypeScript</span>
+               </li>
+            </ul>
          </div>
-      </div>
-      <!-- Hero illustration -->
-      <div class="row justify-content-center mt-5 pb-2">
-         <div class="col-auto">
-            <svg width="340" height="280" viewBox="0 0 340 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-               <defs>
-                  <!-- Flinker brand gradients -->
-                  <linearGradient id="flinkerPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
-                     <stop offset="0%" style="stop-color:#0779FF;stop-opacity:1" />
-                     <stop offset="100%" style="stop-color:#0560cc;stop-opacity:1" />
-                  </linearGradient>
-                  <linearGradient id="flinkerLight" x1="0%" y1="0%" x2="100%" y2="100%">
-                     <stop offset="0%" style="stop-color:#96BFFF;stop-opacity:0.7" />
-                     <stop offset="100%" style="stop-color:#0779FF;stop-opacity:0.4" />
-                  </linearGradient>
-                  <linearGradient id="flinkerGround" x1="0%" y1="0%" x2="0%" y2="100%">
-                     <stop offset="0%" style="stop-color:#0779FF;stop-opacity:0.25" />
-                     <stop offset="100%" style="stop-color:#96BFFF;stop-opacity:0.05" />
-                  </linearGradient>
-                  <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                     <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
-                     <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
-                  </linearGradient>
-                  <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-                     <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-                     <feMerge>
-                        <feMergeNode in="coloredBlur"/>
-                        <feMergeNode in="SourceGraphic"/>
-                     </feMerge>
-                  </filter>
-                  <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-                     <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0779FF" flood-opacity="0.2"/>
-                  </filter>
-               </defs>
 
-               <!-- Ground reflection -->
-               <ellipse cx="170" cy="255" rx="130" ry="20" fill="url(#flinkerGround)" />
-
-               <!-- Monitor/Screen frame -->
-               <g filter="url(#shadow)">
-                  <rect x="45" y="35" width="250" height="175" rx="8" fill="#2d2d2d"/>
-                  <rect x="50" y="40" width="240" height="165" rx="5" fill="url(#screenGrad)"/>
-               </g>
-
-               <!-- Monitor stand -->
-               <path d="M150 210 L190 210 L195 235 L145 235 Z" fill="#3d3d3d"/>
-               <ellipse cx="170" cy="238" rx="35" ry="6" fill="#2d2d2d"/>
-
-               <!-- 3D Building inside screen - Main Tower -->
-               <g transform="translate(95, 55)">
-                  <!-- Back face -->
-                  <path d="M70 25 L120 42 L120 145 L70 128 Z" fill="#0560cc" opacity="0.8"/>
-                  <!-- Front face -->
-                  <path d="M70 25 L70 128 L20 145 L20 42 Z" fill="url(#flinkerPrimary)"/>
-                  <!-- Top face -->
-                  <path d="M20 42 L70 25 L120 42 L70 59 Z" fill="#96BFFF"/>
-                  <!-- Windows grid on front face -->
-                  <g opacity="0.9">
-                     <rect x="28" y="55" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
-                     <rect x="48" y="55" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
-                     <rect x="28" y="78" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
-                     <rect x="48" y="78" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
-                     <rect x="28" y="101" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
-                     <rect x="48" y="101" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
-                     <rect x="28" y="124" width="12" height="14" rx="1" fill="url(#flinkerLight)"/>
-                     <rect x="48" y="124" width="12" height="14" rx="1" fill="url(#flinkerLight)"/>
+         <!-- Right: illustration -->
+         <div class="col-xxl-7 offset-xxl-0 col-lg-7 col-12 mt-5 mt-lg-0 align-self-center">
+               <svg width="100%" viewBox="0 0 340 280" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width:520px;display:block;margin:0 auto;">
+                  <defs>
+                     <linearGradient id="flinkerPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#0779FF;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#0560cc;stop-opacity:1" />
+                     </linearGradient>
+                     <linearGradient id="flinkerLight" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#96BFFF;stop-opacity:0.7" />
+                        <stop offset="100%" style="stop-color:#0779FF;stop-opacity:0.4" />
+                     </linearGradient>
+                     <linearGradient id="flinkerGround" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#0779FF;stop-opacity:0.25" />
+                        <stop offset="100%" style="stop-color:#96BFFF;stop-opacity:0.05" />
+                     </linearGradient>
+                     <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                        <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+                     </linearGradient>
+                     <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+                        <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                        <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                     </filter>
+                     <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                        <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0779FF" flood-opacity="0.2"/>
+                     </filter>
+                  </defs>
+                  <ellipse cx="170" cy="255" rx="130" ry="20" fill="url(#flinkerGround)" />
+                  <g filter="url(#shadow)">
+                     <rect x="45" y="35" width="250" height="175" rx="8" fill="#2d2d2d"/>
+                     <rect x="50" y="40" width="240" height="165" rx="5" fill="url(#screenGrad)"/>
                   </g>
-               </g>
-
-               <!-- Smaller building - left side -->
-               <g transform="translate(60, 105)">
-                  <path d="M35 18 L60 27 L60 95 L35 86 Z" fill="#0560cc" opacity="0.7"/>
-                  <path d="M35 18 L35 86 L10 95 L10 27 Z" fill="url(#flinkerPrimary)" opacity="0.85"/>
-                  <path d="M10 27 L35 18 L60 27 L35 36 Z" fill="#96BFFF" opacity="0.85"/>
-                  <rect x="16" y="40" width="8" height="10" rx="1" fill="url(#flinkerLight)" opacity="0.8"/>
-                  <rect x="16" y="56" width="8" height="10" rx="1" fill="url(#flinkerLight)" opacity="0.8"/>
-                  <rect x="16" y="72" width="8" height="10" rx="1" fill="url(#flinkerLight)" opacity="0.8"/>
-               </g>
-
-               <!-- Wireframe/measurement overlays on screen -->
-               <g filter="url(#softGlow)">
-                  <!-- Horizontal measurement -->
-                  <line x1="70" y1="190" x2="140" y2="190" stroke="#96BFFF" stroke-width="1.5" stroke-dasharray="4,3"/>
-                  <circle cx="70" cy="190" r="3" fill="#96BFFF"/>
-                  <circle cx="140" cy="190" r="3" fill="#96BFFF"/>
-                  <text x="105" y="186" fill="#96BFFF" font-size="8" text-anchor="middle" font-family="system-ui">12.5m</text>
-                  <!-- Vertical measurement -->
-                  <line x1="230" y1="70" x2="230" y2="155" stroke="#96BFFF" stroke-width="1.5" stroke-dasharray="4,3"/>
-                  <circle cx="230" cy="70" r="3" fill="#96BFFF"/>
-                  <circle cx="230" cy="155" r="3" fill="#96BFFF"/>
-                  <text x="245" y="115" fill="#96BFFF" font-size="8" font-family="system-ui">8.2m</text>
-                  <!-- Selection corners -->
-                  <path d="M95 62 L95 52 L105 52" stroke="#0779FF" stroke-width="2" fill="none" stroke-linecap="round"/>
-                  <path d="M215 62 L215 52 L205 52" stroke="#0779FF" stroke-width="2" fill="none" stroke-linecap="round"/>
-                  <path d="M95 188 L95 198 L105 198" stroke="#0779FF" stroke-width="2" fill="none" stroke-linecap="round"/>
-                  <path d="M215 188 L215 198 L205 198" stroke="#0779FF" stroke-width="2" fill="none" stroke-linecap="round"/>
-               </g>
-
-               <!-- Floating toolbar -->
-               <g transform="translate(265, 55)">
-                  <rect x="0" y="0" width="38" height="95" rx="6" fill="white" fill-opacity="0.97" stroke="#e0e0e0" stroke-width="1"/>
-                  <!-- Zoom in -->
-                  <circle cx="19" cy="18" r="10" fill="#0779FF" opacity="0.12"/>
-                  <path d="M15 18 L23 18 M19 14 L19 22" stroke="#0779FF" stroke-width="2" stroke-linecap="round"/>
-                  <!-- Target/focus -->
-                  <circle cx="19" cy="47" r="10" fill="#0779FF" opacity="0.12"/>
-                  <circle cx="19" cy="47" r="5" stroke="#0779FF" stroke-width="2" fill="none"/>
-                  <circle cx="19" cy="47" r="1.5" fill="#0779FF"/>
-                  <!-- Layers -->
-                  <circle cx="19" cy="76" r="10" fill="#0779FF" opacity="0.12"/>
-                  <path d="M11 76 L19 72 L27 76 L19 80 Z" stroke="#0779FF" stroke-width="1.5" fill="none"/>
-                  <path d="M11 80 L19 76 L27 80" stroke="#0779FF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-               </g>
-
-               <!-- 3D navigation cube -->
-               <g transform="translate(55, 50)">
-                  <rect x="0" y="0" width="32" height="32" rx="4" fill="white" fill-opacity="0.95" stroke="#e0e0e0" stroke-width="1"/>
-                  <!-- Mini cube -->
-                  <path d="M16 8 L24 12 L24 22 L16 26 L8 22 L8 12 Z" fill="#96BFFF" opacity="0.3" stroke="#0779FF" stroke-width="1"/>
-                  <path d="M16 8 L16 18 L8 22 L8 12 Z" fill="#0779FF" opacity="0.6"/>
-                  <path d="M16 8 L24 12 L24 22 L16 18 Z" fill="#0779FF" opacity="0.4"/>
-                  <path d="M16 18 L24 22 L16 26 L8 22 Z" fill="#96BFFF" opacity="0.5"/>
-               </g>
-
-               <!-- Status indicator dot -->
-               <circle cx="275" cy="195" r="4" fill="#22c55e">
-                  <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
-               </circle>
-            </svg>
+                  <path d="M150 210 L190 210 L195 235 L145 235 Z" fill="#3d3d3d"/>
+                  <ellipse cx="170" cy="238" rx="35" ry="6" fill="#2d2d2d"/>
+                  <g transform="translate(95, 55)">
+                     <path d="M70 25 L120 42 L120 145 L70 128 Z" fill="#0560cc" opacity="0.8"/>
+                     <path d="M70 25 L70 128 L20 145 L20 42 Z" fill="url(#flinkerPrimary)"/>
+                     <path d="M20 42 L70 25 L120 42 L70 59 Z" fill="#96BFFF"/>
+                     <g opacity="0.9">
+                        <rect x="28" y="55" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
+                        <rect x="48" y="55" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
+                        <rect x="28" y="78" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
+                        <rect x="48" y="78" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
+                        <rect x="28" y="101" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
+                        <rect x="48" y="101" width="12" height="16" rx="1" fill="url(#flinkerLight)"/>
+                        <rect x="28" y="124" width="12" height="14" rx="1" fill="url(#flinkerLight)"/>
+                        <rect x="48" y="124" width="12" height="14" rx="1" fill="url(#flinkerLight)"/>
+                     </g>
+                  </g>
+                  <g transform="translate(60, 105)">
+                     <path d="M35 18 L60 27 L60 95 L35 86 Z" fill="#0560cc" opacity="0.7"/>
+                     <path d="M35 18 L35 86 L10 95 L10 27 Z" fill="url(#flinkerPrimary)" opacity="0.85"/>
+                     <path d="M10 27 L35 18 L60 27 L35 36 Z" fill="#96BFFF" opacity="0.85"/>
+                     <rect x="16" y="40" width="8" height="10" rx="1" fill="url(#flinkerLight)" opacity="0.8"/>
+                     <rect x="16" y="56" width="8" height="10" rx="1" fill="url(#flinkerLight)" opacity="0.8"/>
+                     <rect x="16" y="72" width="8" height="10" rx="1" fill="url(#flinkerLight)" opacity="0.8"/>
+                  </g>
+                  <g filter="url(#softGlow)">
+                     <line x1="70" y1="190" x2="140" y2="190" stroke="#96BFFF" stroke-width="1.5" stroke-dasharray="4,3"/>
+                     <circle cx="70" cy="190" r="3" fill="#96BFFF"/>
+                     <circle cx="140" cy="190" r="3" fill="#96BFFF"/>
+                     <text x="105" y="186" fill="#96BFFF" font-size="8" text-anchor="middle" font-family="system-ui">12.5m</text>
+                     <line x1="230" y1="70" x2="230" y2="155" stroke="#96BFFF" stroke-width="1.5" stroke-dasharray="4,3"/>
+                     <circle cx="230" cy="70" r="3" fill="#96BFFF"/>
+                     <circle cx="230" cy="155" r="3" fill="#96BFFF"/>
+                     <text x="245" y="115" fill="#96BFFF" font-size="8" font-family="system-ui">8.2m</text>
+                     <path d="M95 62 L95 52 L105 52" stroke="#0779FF" stroke-width="2" fill="none" stroke-linecap="round"/>
+                     <path d="M215 62 L215 52 L205 52" stroke="#0779FF" stroke-width="2" fill="none" stroke-linecap="round"/>
+                     <path d="M95 188 L95 198 L105 198" stroke="#0779FF" stroke-width="2" fill="none" stroke-linecap="round"/>
+                     <path d="M215 188 L215 198 L205 198" stroke="#0779FF" stroke-width="2" fill="none" stroke-linecap="round"/>
+                  </g>
+                  <g transform="translate(265, 55)">
+                     <rect x="0" y="0" width="38" height="95" rx="6" fill="white" fill-opacity="0.97" stroke="#e0e0e0" stroke-width="1"/>
+                     <circle cx="19" cy="18" r="10" fill="#0779FF" opacity="0.12"/>
+                     <path d="M15 18 L23 18 M19 14 L19 22" stroke="#0779FF" stroke-width="2" stroke-linecap="round"/>
+                     <circle cx="19" cy="47" r="10" fill="#0779FF" opacity="0.12"/>
+                     <circle cx="19" cy="47" r="5" stroke="#0779FF" stroke-width="2" fill="none"/>
+                     <circle cx="19" cy="47" r="1.5" fill="#0779FF"/>
+                     <circle cx="19" cy="76" r="10" fill="#0779FF" opacity="0.12"/>
+                     <path d="M11 76 L19 72 L27 76 L19 80 Z" stroke="#0779FF" stroke-width="1.5" fill="none"/>
+                     <path d="M11 80 L19 76 L27 80" stroke="#0779FF" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                  </g>
+                  <g transform="translate(55, 50)">
+                     <rect x="0" y="0" width="32" height="32" rx="4" fill="white" fill-opacity="0.95" stroke="#e0e0e0" stroke-width="1"/>
+                     <path d="M16 8 L24 12 L24 22 L16 26 L8 22 L8 12 Z" fill="#96BFFF" opacity="0.3" stroke="#0779FF" stroke-width="1"/>
+                     <path d="M16 8 L16 18 L8 22 L8 12 Z" fill="#0779FF" opacity="0.6"/>
+                     <path d="M16 8 L24 12 L24 22 L16 18 Z" fill="#0779FF" opacity="0.4"/>
+                     <path d="M16 18 L24 22 L16 26 L8 22 Z" fill="#96BFFF" opacity="0.5"/>
+                  </g>
+                  <circle cx="275" cy="195" r="4" fill="#22c55e">
+                     <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+                  </circle>
+               </svg>
          </div>
+
       </div>
    </div>
 </section>
@@ -489,17 +334,30 @@ breadcrumb:
 <!-- ═══════════════════════════════════════════════════════════════════
      TRUSTED BY
      ═══════════════════════════════════════════════════════════════════ -->
-<section class="py-5 border-bottom bg-white">
+<section class="py-5 bg-white">
    <div class="container">
-      <div class="row align-items-center justify-content-center text-center">
-         <div class="col-12 mb-4">
-            <p class="text-muted small text-uppercase fw-semibold mb-0" style="letter-spacing: 0.08em;">Trusted by teams building with the SDK</p>
+      <div class="row">
+         <div class="col-12 text-center mb-4">
+            <p class="text-muted small text-uppercase fw-semibold mb-0" style="letter-spacing: 0.08em;">In production</p>
          </div>
-         <div class="col-auto px-5">
-            <img src="https://bimboss.com/wp-content/uploads/2022/12/site-logo.png" alt="BIMBoss" style="height: 30px; opacity: 0.55; filter: grayscale(1);">
-         </div>
-         <div class="col-auto px-5">
-            <img src="https://xsproject.nl/wp-content/uploads/2025/06/Logo-TaskXS-2048x171-1.png" alt="TaskXS" style="height: 26px; opacity: 0.55; filter: grayscale(1);">
+         <div class="col-lg-8 offset-lg-2 col-12">
+            <div
+               class="swiper-container swiper"
+               id="swiper-sdk-clients"
+               data-speed="400"
+               data-pagination="false"
+               data-navigation="false"
+               data-autoplay="false"
+               data-breakpoints='{"0": {"slidesPerView": 2}, "576": {"slidesPerView": 2}, "1024": {"slidesPerView": 2}}'>
+               <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide d-flex justify-content-center align-items-center" style="height:60px;">
+                     <img src="https://bimboss.com/wp-content/uploads/2022/12/site-logo.png" alt="BIMBoss" style="height: 38px; opacity: 0.55; filter: grayscale(1); max-width:100%; display:block;" loading="lazy">
+                  </div>
+                  <div class="swiper-slide d-flex justify-content-center align-items-center" style="height:60px;">
+                     <img src="https://xsproject.nl/wp-content/uploads/2025/06/Logo-TaskXS-2048x171-1.png" alt="TaskXS" style="height: 22px; opacity: 0.55; filter: grayscale(1); max-width:100%; display:block;" loading="lazy">
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
    </div>
@@ -514,7 +372,7 @@ breadcrumb:
          <div class="col-lg-8 text-center">
             <span class="badge bg-success-subtle text-success mb-3">Live Demo</span>
             <h2 class="mb-3">See it running in your browser</h2>
-            <p class="text-muted">A live embedded instance of the SDK. BCF 3.0 coloring applied to the NBU Medical Clinic IFC model. All IFC processing happens in your browser tab — nothing is sent to a server.</p>
+            <p class="text-muted">BCF 3.0 coloring applied to the NBU Medical Clinic IFC model. Rotate, section, and inspect.</p>
          </div>
       </div>
       <div class="row justify-content-center">
@@ -540,7 +398,7 @@ breadcrumb:
                   </iframe>
                </div>
             </div>
-            <p class="text-center text-muted small mt-3">Rotate, select, and inspect elements. <a href="https://docs.flinker.app/docs/ifc-viewer-sdk-examples.html" target="_blank" rel="noopener">View all SDK examples →</a></p>
+            <p class="text-center text-muted small mt-3"><a href="https://docs.flinker.app/docs/ifc-viewer-sdk-examples.html" target="_blank" rel="noopener">View all SDK examples →</a></p>
          </div>
       </div>
    </div>
@@ -554,42 +412,45 @@ breadcrumb:
       <div class="row justify-content-center mb-7">
          <div class="col-lg-8 text-center">
             <h2 class="mb-3">From zero to running viewer in minutes</h2>
-            <p class="text-muted">No build pipeline, no account, no server setup. Import one module and your app has a fully working IFC viewer.</p>
          </div>
       </div>
-      <div class="row g-4 justify-content-center">
-         <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
-               <div class="card-body p-4 text-center">
-                  <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 56px; height: 56px;">
-                     <span class="fw-bold text-primary fs-5">1</span>
+      <div class="table-responsive-xl">
+         <div class="row flex-nowrap pb-4 pb-lg-0 me-5 me-lg-0">
+            <div class="col-lg-4 col-md-6 col-12">
+               <div class="p-xl-5 p-3">
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                     <div class="icon-xl icon-shape rounded-circle bg-primary border border-primary-subtle border-4 text-white fw-semibold fs-3">1</div>
+                     <i class="bi bi-arrow-right text-body-tertiary fs-4"></i>
                   </div>
-                  <h5 class="mb-2">Import one CDN module</h5>
-                  <p class="text-muted small mb-0">Add a <code>&lt;bim-grid&gt;</code> element, import <code>IfcViewer</code> from Flinker's CDN with a single <code>&lt;script type="module"&gt;</code>. No npm, no bundler required.</p>
+                  <h3 class="h4">Import one CDN module</h3>
+                  <p class="mb-0 text-muted">Add a <code>&lt;script type="module"&gt;</code> from Flinker's CDN. No npm install, no build step.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+               <div class="p-xl-5 p-3">
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                     <div class="icon-xl icon-shape rounded-circle bg-primary border border-primary-subtle border-4 text-white fw-semibold fs-3">2</div>
+                     <i class="bi bi-arrow-right text-body-tertiary fs-4"></i>
+                  </div>
+                  <h3 class="h4">Pass your IFC bytes</h3>
+                  <p class="mb-0 text-muted">Call <code>viewer.add()</code> with a <code>Uint8Array</code>. Parsing and 3D rendering happen entirely in-browser.</p>
+               </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+               <div class="p-xl-5 p-3">
+                  <div class="d-flex align-items-center justify-content-between mb-5">
+                     <div class="icon-xl icon-shape rounded-circle bg-primary border border-primary-subtle border-4 text-white fw-semibold fs-3">3</div>
+                     <i class="bi bi-check-circle-fill text-success fs-4"></i>
+                  </div>
+                  <h3 class="h4">Connect to your product</h3>
+                  <p class="mb-0 text-muted">Wire viewer events (selections, BCF viewpoints, colorings, filters) to your own UI.</p>
                </div>
             </div>
          </div>
-         <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
-               <div class="card-body p-4 text-center">
-                  <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 56px; height: 56px;">
-                     <span class="fw-bold text-success fs-5">2</span>
-                  </div>
-                  <h5 class="mb-2">Pass IFC bytes from your app</h5>
-                  <p class="text-muted small mb-0">Your application fetches or reads the file, converts it to <code>Uint8Array</code>, and calls <code>viewer.add()</code>. IFC parsing and 3D rendering happen entirely inside the browser. Nothing is uploaded to any server.</p>
-               </div>
-            </div>
-         </div>
-         <div class="col-md-4">
-            <div class="card h-100 border-0 shadow-sm">
-               <div class="card-body p-4 text-center">
-                  <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 56px; height: 56px;">
-                     <span class="fw-bold text-primary fs-5">3</span>
-                  </div>
-                  <h5 class="mb-2">Connect to your product</h5>
-                  <p class="text-muted small mb-0">Connect viewer state (selections, BCF viewpoints, colorings, filters) to your own UI. The Community plan scales with your product; upgrade to Growth or Enterprise as volume grows.</p>
-               </div>
-            </div>
+      </div>
+      <div class="row">
+         <div class="col-12 text-center mt-5">
+            <a href="https://docs.flinker.app/docs/ifc-viewer-sdk.html" class="btn btn-outline-primary" target="_blank" rel="noopener">View SDK documentation →</a>
          </div>
       </div>
    </div>
@@ -598,12 +459,11 @@ breadcrumb:
 <!-- ═══════════════════════════════════════════════════════════════════
      WHAT YOU GET — FEATURES
      ═══════════════════════════════════════════════════════════════════ -->
-<section class="py-9 bg-light">
+<section class="py-9">
    <div class="container">
       <div class="row justify-content-center mb-7">
          <div class="col-lg-8 text-center">
             <h2 class="mb-3">A complete viewer workflow, not just a canvas</h2>
-            <p class="text-muted">The SDK ships with every feature your users need to inspect, coordinate, and validate BIM data in the browser.</p>
          </div>
       </div>
       <div class="row g-4 justify-content-center">
@@ -614,7 +474,7 @@ breadcrumb:
                      <i class="bi bi-box fs-5 text-primary me-3 flex-shrink-0 mt-1"></i>
                      <div>
                         <div class="fw-semibold">Browser IFC Viewer</div>
-                        <div class="text-muted small">Open and inspect IFC models directly in a web page. WebGL 2 rendering for large enterprise-scale datasets.</div>
+                        <div class="text-muted small">WebGL 2 rendering for large enterprise-scale datasets.</div>
                      </div>
                   </div>
                </div>
@@ -659,7 +519,7 @@ breadcrumb:
                      <i class="bi bi-eye fs-5 text-primary me-3 flex-shrink-0 mt-1"></i>
                      <div>
                         <div class="fw-semibold">Visibility Control</div>
-                        <div class="text-muted small">Hide, show, isolate, and focus model elements so users work on the relevant part of the model.</div>
+                        <div class="text-muted small">Hide, show, isolate, and focus model elements.</div>
                      </div>
                   </div>
                </div>
@@ -668,7 +528,7 @@ breadcrumb:
                      <i class="bi bi-palette fs-5 text-primary me-3 flex-shrink-0 mt-1"></i>
                      <div>
                         <div class="fw-semibold">Coloring</div>
-                        <div class="text-muted small">Apply visual color states for status, risk, responsibility, progress, cost, or any custom business data.</div>
+                        <div class="text-muted small">Color elements by status, risk, progress, cost, or any business attribute.</div>
                      </div>
                   </div>
                </div>
@@ -695,7 +555,7 @@ breadcrumb:
                      <i class="bi bi-check2-circle fs-5 text-primary me-3 flex-shrink-0 mt-1"></i>
                      <div>
                         <div class="fw-semibold">IDS Validation</div>
-                        <div class="text-muted small">Show IDS information requirement check results next to the model. Failed elements are visible in the 3D view.</div>
+                        <div class="text-muted small">Run IDS checks and show failed elements directly in the 3D view.</div>
                      </div>
                   </div>
                </div>
@@ -731,7 +591,7 @@ breadcrumb:
       <div class="row justify-content-center mb-6">
          <div class="col-lg-8 text-center">
             <h2 class="mb-3">Five lines. A complete IFC viewer.</h2>
-            <p class="text-muted">This is the full integration. Add the element, import the module, await ready, pass bytes. No backend, no configuration files, no extra dependencies.</p>
+            <p class="text-muted">No backend, no config files.</p>
          </div>
       </div>
       <div class="row justify-content-center">
@@ -756,93 +616,8 @@ breadcrumb:
             </div>
             <div class="text-center mt-4">
                <a href="https://docs.flinker.app/docs/ifc-viewer-sdk.html" class="btn btn-outline-primary me-2" target="_blank">Full documentation</a>
-               <a href="https://docs.flinker.app/docs/ifc-viewer-sdk-api.html" class="btn btn-outline-secondary me-2" target="_blank">API reference</a>
-               <a href="https://docs.flinker.app/docs/ifc-viewer-sdk-examples.html" class="btn btn-outline-secondary" target="_blank">SDK examples</a>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════════
-     VALUE PROPS
-     ═══════════════════════════════════════════════════════════════════ -->
-<section class="py-8 py-lg-10 bg-light">
-   <div class="container">
-      <div class="row g-5 justify-content-center">
-         <div class="col-md-4 text-center">
-            <div class="bg-success bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 64px; height: 64px;">
-               <i class="bi bi-gift fs-4 text-success"></i>
-            </div>
-            <h5 class="mb-2">Free to use</h5>
-            <p class="text-muted small mb-0">The Community plan is a permanent commercial tier, not a trial. Import one module and ship IFC viewing into your product today. Small teams can run on Community indefinitely.</p>
-         </div>
-         <div class="col-md-4 text-center">
-            <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 64px; height: 64px;">
-               <i class="bi bi-shield-check fs-4 text-primary"></i>
-            </div>
-            <h5 class="mb-2">Privacy-first</h5>
-            <p class="text-muted small mb-0">IFC files are parsed and rendered entirely inside the browser. Nothing is uploaded to a Flinker server. Your users' models stay on their device.</p>
-         </div>
-         <div class="col-md-4 text-center">
-            <div class="bg-primary bg-opacity-10 rounded-circle d-inline-flex align-items-center justify-content-center mb-4" style="width: 64px; height: 64px;">
-               <i class="bi bi-lightning fs-4 text-primary"></i>
-            </div>
-            <h5 class="mb-2">No npm install</h5>
-            <p class="text-muted small mb-0">One CDN ES module import. Works with plain HTML, React, Vue, Angular, TypeScript, or any modern frontend that supports browser modules.</p>
-         </div>
-      </div>
-   </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════════
-     PRICING HEADER
-     ═══════════════════════════════════════════════════════════════════ -->
-<section class="py-8 py-lg-10">
-   <div class="container">
-      <div class="row align-items-center py-lg-4">
-         <div class="col-lg-8 offset-lg-2 text-center">
-            <span class="badge bg-primary-subtle text-primary mb-3">Pricing</span>
-            <h2 class="display-6">Start free. <em class="text-primary">Scale when ready.</em></h2>
-            <p class="lead text-muted mb-0">Community is a real commercial tier with no expiry. Upgrade to remove branding and unlock higher volume.</p>
-         </div>
-      </div>
-   </div>
-</section>
-
-<!-- ═══════════════════════════════════════════════════════════════════
-     INTERACTIVE CALCULATOR
-     ═══════════════════════════════════════════════════════════════════ -->
-<section class="py-8">
-   <div class="container">
-      <div class="row justify-content-center">
-         <div class="col-lg-10">
-            <div class="calc-card">
-               <div class="calc-label">Estimate your plan</div>
-               <div class="calc-slider-wrap">
-                  <div class="calc-slider-header">
-                     <span class="calc-slider-title">Viewer opens per month</span>
-                     <span class="calc-slider-value" id="sdkOpensDisplay">1,000</span>
-                  </div>
-                  <input type="range" class="calc-range" id="sdkOpensSlider" min="0" max="100" value="20" step="1">
-                  <div class="calc-tick-labels">
-                     <span>Community<br><small class="fw-normal">0–2k</small></span>
-                     <span>Growth<br><small class="fw-normal">2k–3k</small></span>
-                     <span>Scale<br><small class="fw-normal">3k–10k</small></span>
-                     <span>Enterprise<br><small class="fw-normal">10k+</small></span>
-                  </div>
-               </div>
-               <div class="tier-rec rec-community" id="sdkTierRec">
-                  <div>
-                     <div class="rec-label">Recommended plan</div>
-                     <div class="rec-tier" id="sdkRecTier">Community</div>
-                     <div class="rec-desc" id="sdkRecDesc">Free up to 2,000 opens/month · Flinker branding included</div>
-                  </div>
-                  <div class="text-end flex-shrink-0">
-                     <div class="rec-amount" id="sdkRecAmount">€0</div>
-                     <div class="rec-period" id="sdkRecPeriod">/ month</div>
-                  </div>
-               </div>
+               <a href="https://docs.flinker.app/docs/ifc-viewer-sdk-api.html" class="btn btn-outline-primary me-2" target="_blank">API reference</a>
+               <a href="https://docs.flinker.app/docs/ifc-viewer-sdk-examples.html" class="btn btn-outline-primary" target="_blank">SDK examples</a>
             </div>
          </div>
       </div>
@@ -855,21 +630,22 @@ breadcrumb:
 <section class="py-8 py-lg-10">
    <div class="container">
       <div class="row justify-content-center mb-7">
-         <div class="col-lg-6 text-center">
-            <h2 class="mb-3">Choose Your Plan</h2>
-            <p class="text-muted">All plans include the full viewer feature set. Upgrades remove Flinker branding and increase your monthly opens limit.</p>
+         <div class="col-lg-7 text-center">
+            <span class="badge bg-primary-subtle text-primary mb-3">Pricing</span>
+            <h2 class="display-6 mb-3">Free forever. No surprises when you grow.</h2>
+            <p class="lead text-muted mb-0">No trial period, no hidden limits. Upgrade when you outgrow 2,000 opens/month or need to remove Flinker branding.</p>
          </div>
       </div>
       <div class="row g-4 justify-content-center">
 
          <!-- Community -->
-         <div class="col-lg-3 col-md-6">
-            <div class="plan plan-accent h-100" id="sdk-card-community">
+         <div class="col-lg-4 col-md-6">
+            <div class="plan plan-accent h-100 d-flex flex-column" id="sdk-card-community">
                <div class="plan-badge">Most popular</div>
                <div class="plan-name">Community</div>
                <div class="plan-opens">up to 2,000 opens/mo</div>
                <div class="plan-price">€0</div>
-               <div class="plan-per">permanent commercial tier</div>
+               <div class="plan-per">free · commercial use included</div>
                <hr>
                <ul class="list-unstyled mb-4">
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Full viewer feature set</span></li>
@@ -877,16 +653,16 @@ breadcrumb:
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">BCF 2.1 &amp; 3, IDS 1.0</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">React, Vue, Angular, TypeScript</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">CDN import, no npm required</span></li>
-                  <li class="mb-0 d-flex align-items-start"><i class="bi bi-info-circle-fill text-primary mt-1 me-2"></i><span class="text-muted small">Flinker branding included</span></li>
+                  <li class="mb-0 d-flex align-items-start"><i class="bi bi-info-circle-fill text-warning mt-1 me-2"></i><span class="text-muted small">Flinker branding required</span></li>
                </ul>
-               <a href="https://docs.flinker.app/docs/ifc-viewer-sdk.html" class="btn btn-primary w-100" target="_blank">Use for free</a>
+               <a href="https://docs.flinker.app/docs/ifc-viewer-sdk.html" class="btn btn-primary w-100 mt-auto" target="_blank">Use for free</a>
             </div>
          </div>
 
-         <!-- Growth -->
-         <div class="col-lg-3 col-md-6">
-            <div class="plan h-100" id="sdk-card-growth">
-               <div class="plan-name">Growth</div>
+         <!-- Pro -->
+         <div class="col-lg-4 col-md-6">
+            <div class="plan h-100 d-flex flex-column" id="sdk-card-pro">
+               <div class="plan-name">Pro</div>
                <div class="plan-opens">up to 3,000 opens/mo</div>
                <div class="plan-price">€300</div>
                <div class="plan-per">/ month · annual billing</div>
@@ -894,50 +670,32 @@ breadcrumb:
                <ul class="list-unstyled mb-4">
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Everything in Community</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">White-label — no Flinker branding</span></li>
-                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Self-serve upgrade</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Email support</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Self-serve upgrade</span></li>
                   <li class="mb-0 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Annual pre-pay (€3,600/yr)</span></li>
                </ul>
-               <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-outline-primary w-100">Get Growth</a>
-            </div>
-         </div>
-
-         <!-- Scale -->
-         <div class="col-lg-3 col-md-6">
-            <div class="plan h-100" id="sdk-card-scale">
-               <div class="plan-name">Scale</div>
-               <div class="plan-opens">up to 10,000 opens/mo</div>
-               <div class="plan-price">€750</div>
-               <div class="plan-per">/ month · annual billing</div>
-               <hr>
-               <ul class="list-unstyled mb-4">
-                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Everything in Growth</span></li>
-                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Priority support</span></li>
-                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">SLA agreement</span></li>
-                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Dedicated contact</span></li>
-                  <li class="mb-0 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Annual pre-pay (€9,000/yr)</span></li>
-               </ul>
-               <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-outline-primary w-100">Contact Sales</a>
+               <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-outline-primary w-100 mt-auto">Get Pro</a>
             </div>
          </div>
 
          <!-- Enterprise -->
-         <div class="col-lg-3 col-md-6">
-            <div class="plan h-100" id="sdk-card-enterprise">
+         <div class="col-lg-4 col-md-6">
+            <div class="plan h-100 d-flex flex-column" id="sdk-card-enterprise">
                <div class="plan-name">Enterprise</div>
-               <div class="plan-opens">10,000+ opens/mo</div>
+               <div class="plan-opens">3,000+ opens/mo</div>
                <div class="plan-price">Custom</div>
                <div class="plan-per">contact us for pricing</div>
                <hr>
                <ul class="list-unstyled mb-4">
-                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Everything in Scale</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Everything in Pro</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Priority support + SLA agreement</span></li>
+                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Dedicated contact</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">ERP integration (SAP, Oracle, Dynamics)</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Microsoft Azure, Fabric &amp; Foundry ready</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">On-premise &amp; private cloud deployment</span></li>
-                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Multi-team setup &amp; custom SLA</span></li>
                   <li class="mb-0 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Custom contract &amp; volume pricing</span></li>
                </ul>
-               <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-outline-primary w-100">Contact Sales</a>
+               <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-outline-primary w-100 mt-auto">Contact Sales</a>
             </div>
          </div>
 
@@ -954,71 +712,57 @@ breadcrumb:
 <!-- ═══════════════════════════════════════════════════════════════════
      INTEGRATION PATTERNS
      ═══════════════════════════════════════════════════════════════════ -->
-<section class="py-9 bg-light">
+<section class="pt-xl-6 pb-xl-10 py-lg-7 py-5">
    <div class="container">
-      <div class="row justify-content-center mb-7">
-         <div class="col-lg-8 text-center">
-            <h2 class="mb-3">Where teams embed it</h2>
-            <p class="text-muted">Your app stays in control of authentication, file access, and permissions. The viewer handles IFC rendering. Drop it into any web architecture.</p>
+      <div class="row mb-6">
+         <div class="col-lg-5">
+            <h2 class="mb-0">Where teams embed it</h2>
+         </div>
+         <div class="offset-xl-1 col-xl-6">
+            <p class="mb-0">Your app stays in control of authentication, file access, and permissions. The viewer handles IFC rendering.</p>
          </div>
       </div>
-      <div class="row g-4 justify-content-center">
-         <div class="col-lg-10">
-            <div class="row g-4">
-               <div class="col-md-4">
-                  <div class="card h-100 border-0 shadow-sm">
-                     <div class="card-body p-4">
-                        <i class="bi bi-folder2-open fs-3 text-primary mb-3"></i>
-                        <h6>CDE &amp; Document Platform</h6>
-                        <p class="text-muted small mb-0">Load IFC files from project folders and show the model next to metadata, approvals, and revision history.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="card h-100 border-0 shadow-sm">
-                     <div class="card-body p-4">
-                        <i class="bi bi-cpu fs-3 text-primary mb-3"></i>
-                        <h6>Digital Twin</h6>
-                        <p class="text-muted small mb-0">Show the BIM model next to sensor data, asset records, maintenance logs, or operational dashboards.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="card h-100 border-0 shadow-sm">
-                     <div class="card-body p-4">
-                        <i class="bi bi-kanban fs-3 text-primary mb-3"></i>
-                        <h6>Project Management App</h6>
-                        <p class="text-muted small mb-0">Connect selected elements and BCF viewpoints to tasks, issues, comments, and saved views.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="card h-100 border-0 shadow-sm">
-                     <div class="card-body p-4">
-                        <i class="bi bi-box-seam fs-3 text-primary mb-3"></i>
-                        <h6>ERP &amp; Procurement</h6>
-                        <p class="text-muted small mb-0">Color and select model elements by work package, cost code, vendor, or procurement status.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="card h-100 border-0 shadow-sm">
-                     <div class="card-body p-4">
-                        <i class="bi bi-bar-chart-line fs-3 text-primary mb-3"></i>
-                        <h6>Analytics Dashboard</h6>
-                        <p class="text-muted small mb-0">Load IFC geometry next to tables, charts, validation results, quantities, and status fields.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="card h-100 border-0 shadow-sm">
-                     <div class="card-body p-4">
-                        <i class="bi bi-buildings fs-3 text-primary mb-3"></i>
-                        <h6>Facility Management</h6>
-                        <p class="text-muted small mb-0">Navigate spaces, assets, equipment, COBie data, and handover information in one browser view.</p>
-                     </div>
-                  </div>
-               </div>
+      <div class="row g-4">
+         <div class="col-lg-4 col-md-6">
+            <div class="card bg-primary bg-opacity-10 p-4 border-0 h-100 card-lift">
+               <div class="mb-4"><i class="bi bi-folder2-open text-primary" style="font-size:2rem;"></i></div>
+               <h3 class="h6 fw-semibold">CDE &amp; Document Platform</h3>
+               <p class="mb-0 text-primary-emphasis">Load IFC files from project folders and show the model next to metadata, approvals, and revision history.</p>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+            <div class="card bg-success bg-opacity-10 p-4 border-0 h-100 card-lift">
+               <div class="mb-4"><i class="bi bi-cpu text-success" style="font-size:2rem;"></i></div>
+               <h3 class="h6 fw-semibold">Digital Twin</h3>
+               <p class="mb-0 text-success-emphasis">Show the BIM model next to sensor data, asset records, maintenance logs, or operational dashboards.</p>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+            <div class="card bg-info bg-opacity-10 p-4 border-0 h-100 card-lift">
+               <div class="mb-4"><i class="bi bi-kanban text-info" style="font-size:2rem;"></i></div>
+               <h3 class="h6 fw-semibold">Project Management App</h3>
+               <p class="mb-0 text-info-emphasis">Connect selected elements and BCF viewpoints to tasks, issues, comments, and saved views.</p>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+            <div class="card bg-warning bg-opacity-10 p-4 border-0 h-100 card-lift">
+               <div class="mb-4"><i class="bi bi-box-seam text-warning" style="font-size:2rem;"></i></div>
+               <h3 class="h6 fw-semibold">ERP &amp; Procurement</h3>
+               <p class="mb-0 text-warning-emphasis">Color and select model elements by work package, cost code, vendor, or procurement status.</p>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+            <div class="card bg-primary bg-opacity-10 p-4 border-0 h-100 card-lift">
+               <div class="mb-4"><i class="bi bi-bar-chart-line text-primary" style="font-size:2rem;"></i></div>
+               <h3 class="h6 fw-semibold">Analytics Dashboard</h3>
+               <p class="mb-0 text-primary-emphasis">Load IFC geometry next to tables, charts, validation results, quantities, and status fields.</p>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-6">
+            <div class="card bg-success bg-opacity-10 p-4 border-0 h-100 card-lift">
+               <div class="mb-4"><i class="bi bi-buildings text-success" style="font-size:2rem;"></i></div>
+               <h3 class="h6 fw-semibold">Facility Management</h3>
+               <p class="mb-0 text-success-emphasis">Navigate spaces, assets, equipment, COBie data, and handover information in one browser view.</p>
             </div>
          </div>
       </div>
@@ -1033,8 +777,8 @@ breadcrumb:
       <div class="row justify-content-center mb-6">
          <div class="col-lg-8 text-center">
             <span class="badge bg-primary-subtle text-primary mb-3">For AI Coding Assistants</span>
-            <h2 class="mb-3">Ready for AI-assisted development</h2>
-            <p class="text-muted">Using Copilot, Claude, Codex, or another coding assistant? Paste this prompt to get a fully working IFC viewer in minutes. The Community plan requires no account, making it the natural choice for AI-generated integrations.</p>
+            <h2 class="mb-3">Works with Copilot, Claude, and Codex</h2>
+            <p class="text-muted">Paste this prompt. Get a working IFC viewer without any sign-up step.</p>
          </div>
       </div>
       <div class="row justify-content-center">
@@ -1063,116 +807,128 @@ Do not upload the IFC file to a backend just to view it.</pre>
 <!-- ═══════════════════════════════════════════════════════════════════
      FAQ
      ═══════════════════════════════════════════════════════════════════ -->
-<section class="py-8 py-lg-10 bg-light">
+<section class="mb-xl-9 mb-4 py-8 py-lg-10">
    <div class="container">
-      <div class="row justify-content-center mb-6">
-         <div class="col-lg-8 text-center">
-            <h2 class="mb-3">Frequently Asked Questions</h2>
+      <div class="row">
+         <div class="col-lg-10 offset-lg-1">
+            <div class="text-center mb-7">
+               <h2>Frequently Asked Questions</h2>
+               <p class="mb-0">Can't find the answer you're looking for?<br>
+               <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="text-primary">Contact our team</a></p>
+            </div>
          </div>
       </div>
-      <div class="row justify-content-center">
-         <div class="col-lg-8">
-            <div class="accordion" id="sdkFaq">
+      <div class="row">
+         <div class="col-lg-10 offset-lg-1">
+            <div id="sdkFaq">
 
-               <div class="accordion-item border rounded-3 mb-3">
-                  <h3 class="accordion-header">
-                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#sdkFaq1" aria-expanded="true" aria-controls="sdkFaq1">
+               <div class="border mb-2 rounded-3 p-3">
+                  <h3 class="h5 mb-0">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq1" aria-expanded="true" aria-controls="sdkFaq1">
                         Do I need an account or API key to use the SDK?
-                     </button>
+                        <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                     </a>
                   </h3>
                   <div id="sdkFaq1" class="accordion-collapse collapse show" data-bs-parent="#sdkFaq">
-                     <div class="accordion-body text-muted">
-                        No. The Community plan works by importing the CDN ES module directly — no account, no API key, no sign-up required. Import the module, create <code>new IfcViewer(...)</code>, and you have a working viewer. The Community plan is subject to a 2,000 opens/month limit and requires Flinker branding to remain visible in the viewer.
+                     <div class="mt-3 text-muted">
+                        No. The Community plan works by importing the CDN ES module directly — no account, no API key. Import the module, create <code>new IfcViewer(...)</code>, and you have a working viewer. The Community plan is subject to a 2,000 opens/month limit and requires Flinker branding to remain visible in the viewer.
                      </div>
                   </div>
                </div>
 
-               <div class="accordion-item border rounded-3 mb-3">
-                  <h3 class="accordion-header">
-                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sdkFaq2" aria-controls="sdkFaq2">
+               <div class="border mb-2 rounded-3 p-3">
+                  <h3 class="h5 mb-0">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq2" aria-expanded="false" aria-controls="sdkFaq2">
                         Does the SDK upload my IFC files to a Flinker server?
-                     </button>
+                        <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                     </a>
                   </h3>
                   <div id="sdkFaq2" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
-                     <div class="accordion-body text-muted">
+                     <div class="mt-3 text-muted">
                         No. Your application reads or fetches the file, converts it to <code>Uint8Array</code>, and passes it to <code>viewer.add()</code>. IFC parsing and WebGL rendering happen entirely inside the visitor's browser. Files are never transferred to a Flinker server.
                      </div>
                   </div>
                </div>
 
-               <div class="accordion-item border rounded-3 mb-3">
-                  <h3 class="accordion-header">
-                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sdkFaq3" aria-controls="sdkFaq3">
+               <div class="border mb-2 rounded-3 p-3">
+                  <h3 class="h5 mb-0">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq3" aria-expanded="false" aria-controls="sdkFaq3">
                         Which JavaScript frameworks are supported?
-                     </button>
+                        <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                     </a>
                   </h3>
                   <div id="sdkFaq3" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
-                     <div class="accordion-body text-muted">
-                        The SDK mounts into a DOM element and works with any framework that supports browser ES modules: React, Vue, Angular, TypeScript, Svelte, or plain HTML. Create the element in your component, initialize the viewer after the element exists, and call <code>viewer.add()</code> when your app has file bytes.
+                     <div class="mt-3 text-muted">
+                        The SDK mounts into a DOM element and works with any framework that supports browser ES modules: React, Vue, Angular, TypeScript, Svelte, or plain HTML.
                      </div>
                   </div>
                </div>
 
-               <div class="accordion-item border rounded-3 mb-3">
-                  <h3 class="accordion-header">
-                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sdkFaq4" aria-controls="sdkFaq4">
+               <div class="border mb-2 rounded-3 p-3">
+                  <h3 class="h5 mb-0">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq4" aria-expanded="false" aria-controls="sdkFaq4">
                         What counts as a viewer open?
-                     </button>
+                        <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                     </a>
                   </h3>
                   <div id="sdkFaq4" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
-                     <div class="accordion-body text-muted">
+                     <div class="mt-3 text-muted">
                         One viewer open is counted each time <code>viewer.add()</code> is called to load a model file. Loading multiple discipline models in one session (federated review) counts as one open per file loaded.
                      </div>
                   </div>
                </div>
 
-               <div class="accordion-item border rounded-3 mb-3">
-                  <h3 class="accordion-header">
-                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sdkFaq5" aria-controls="sdkFaq5">
+               <div class="border mb-2 rounded-3 p-3">
+                  <h3 class="h5 mb-0">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq5" aria-expanded="false" aria-controls="sdkFaq5">
                         Is the Community plan permanently free?
-                     </button>
+                        <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                     </a>
                   </h3>
                   <div id="sdkFaq5" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
-                     <div class="accordion-body text-muted">
-                        Yes. The Community plan is free up to 2,000 opens per month with no time limit. Flinker branding must remain visible in the viewer on the Community plan. When you need more opens or want to remove the branding, upgrade to Growth or Scale.
+                     <div class="mt-3 text-muted">
+                        Yes. The Community plan is free up to 2,000 opens per month with no time limit. Flinker branding must remain visible in the viewer on the Community plan. When you need more opens or want to remove the branding, upgrade to Pro or Enterprise.
                      </div>
                   </div>
                </div>
 
-               <div class="accordion-item border rounded-3 mb-3">
-                  <h3 class="accordion-header">
-                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sdkFaq6" aria-controls="sdkFaq6">
+               <div class="border mb-2 rounded-3 p-3">
+                  <h3 class="h5 mb-0">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq6" aria-expanded="false" aria-controls="sdkFaq6">
                         Can I remove Flinker branding from the viewer?
-                     </button>
+                        <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                     </a>
                   </h3>
                   <div id="sdkFaq6" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
-                     <div class="accordion-body text-muted">
-                        Yes, on Growth, Scale, and Enterprise plans the viewer is fully white-label — no Flinker branding appears in the viewer interface. Community plan requires Flinker branding to remain visible.
+                     <div class="mt-3 text-muted">
+                        Yes. Pro and Enterprise are fully white-label. Community requires Flinker branding.
                      </div>
                   </div>
                </div>
 
-               <div class="accordion-item border rounded-3 mb-3">
-                  <h3 class="accordion-header">
-                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sdkFaq7" aria-controls="sdkFaq7">
+               <div class="border mb-2 rounded-3 p-3">
+                  <h3 class="h5 mb-0">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq7" aria-expanded="false" aria-controls="sdkFaq7">
                         Does the SDK need an npm install?
-                     </button>
+                        <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                     </a>
                   </h3>
                   <div id="sdkFaq7" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
-                     <div class="accordion-body text-muted">
-                        No. The standard integration uses Flinker's CDN ES module — one <code>import</code> line. This makes the SDK the fastest path to a complete embedded IFC viewer in an existing web application. No build pipeline changes are required.
+                     <div class="mt-3 text-muted">
+                        No. The standard integration uses Flinker's CDN ES module — one <code>import</code> line. No build pipeline changes are required.
                      </div>
                   </div>
                </div>
 
-               <div class="accordion-item border rounded-3 mb-3">
-                  <h3 class="accordion-header">
-                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sdkFaq8" aria-controls="sdkFaq8">
+               <div class="border mb-2 rounded-3 p-3">
+                  <h3 class="h5 mb-0">
+                     <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq8" aria-expanded="false" aria-controls="sdkFaq8">
                         Do prices include VAT?
-                     </button>
+                        <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
+                     </a>
                   </h3>
                   <div id="sdkFaq8" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
-                     <div class="accordion-body text-muted">
+                     <div class="mt-3 text-muted">
                         All prices shown are exclusive of VAT. VAT will be applied where required based on your location.
                      </div>
                   </div>
@@ -1192,7 +948,7 @@ Do not upload the IFC file to a backend just to view it.</pre>
       <div class="row justify-content-center">
          <div class="col-lg-7 text-center">
             <h2 class="text-white mb-3">Start building. It's free.</h2>
-            <p class="text-white-50 mb-5">Import one CDN module. No account, no credit card required. Upgrade to remove branding or increase your volume when you're ready.</p>
+            <p class="text-white-50 mb-5">Import one CDN module. No account, no credit card required. Upgrade when you're ready.</p>
             <div class="d-flex justify-content-center flex-wrap gap-3">
                <a href="https://docs.flinker.app/docs/ifc-viewer-sdk.html" class="btn btn-light btn-lg px-4" target="_blank">Use for free</a>
                <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" class="btn btn-outline-light btn-lg px-4">Talk to Sales</a>
@@ -1210,7 +966,7 @@ Do not upload the IFC file to a backend just to view it.</pre>
   "@context": "https://schema.org/",
   "@type": "SoftwareApplication",
   "name": "Flinker IFC Viewer SDK",
-  "description": "JavaScript SDK for embedding a complete IFC viewer in web applications. Supports IFC 2x3, IFC4, IFC4x3, BCF, and IDS. Free community plan up to 2,000 opens per month. No npm install, privacy-first, browser-local IFC processing.",
+  "description": "JavaScript SDK for embedding a complete IFC viewer in web applications. The Community tier is free forever with commercial use included, up to 2,000 opens per month. Supports IFC 2x3, IFC4, IFC4x3, BCF, and IDS. No npm install, privacy-first, browser-local IFC processing.",
   "applicationCategory": "DeveloperApplication",
   "operatingSystem": "Web Browser (Chrome, Edge, Firefox, Safari 16+)",
   "url": "https://flinker.app/developers/ifc-viewer/sdk/",
@@ -1225,14 +981,14 @@ Do not upload the IFC file to a backend just to view it.</pre>
     {
       "@type": "Offer",
       "name": "Community",
-      "description": "Free IFC Viewer SDK plan. Up to 2,000 viewer opens per month. Flinker branding required. No account or API key needed — import the CDN ES module to start.",
+      "description": "Free forever IFC Viewer SDK plan with commercial use included. Up to 2,000 viewer opens per month. Flinker branding required. No account or API key needed — import the CDN ES module to start.",
       "price": "0",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock"
     },
     {
       "@type": "Offer",
-      "name": "Growth",
+      "name": "Pro",
       "description": "Up to 3,000 viewer opens per month. White-label, no Flinker branding. Annual billing.",
       "price": "300",
       "priceCurrency": "EUR",
@@ -1247,17 +1003,8 @@ Do not upload the IFC file to a backend just to view it.</pre>
     },
     {
       "@type": "Offer",
-      "name": "Scale",
-      "description": "Up to 10,000 viewer opens per month. White-label, priority support, SLA. Annual billing.",
-      "price": "750",
-      "priceCurrency": "EUR",
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
-        "price": "750",
-        "priceCurrency": "EUR",
-        "billingDuration": "P1M",
-        "unitCode": "MON"
-      },
+      "name": "Enterprise",
+      "description": "Custom pricing for 3,000+ opens/month. White-label, priority support, SLA. Annual billing.",
       "availability": "https://schema.org/InStock"
     }
   ],
@@ -1270,79 +1017,3 @@ Do not upload the IFC file to a backend just to view it.</pre>
 }
 </script>
 
-<!-- ═══════════════════════════════════════════════════════════════════
-     CALCULATOR JAVASCRIPT
-     ═══════════════════════════════════════════════════════════════════ -->
-<script>
-(function () {
-  var slider       = document.getElementById('sdkOpensSlider');
-  var opensDisplay = document.getElementById('sdkOpensDisplay');
-  var tierRec      = document.getElementById('sdkTierRec');
-  var recTier      = document.getElementById('sdkRecTier');
-  var recDesc      = document.getElementById('sdkRecDesc');
-  var recAmount    = document.getElementById('sdkRecAmount');
-  var recPeriod    = document.getElementById('sdkRecPeriod');
-  var cards = {
-    community:  document.getElementById('sdk-card-community'),
-    growth:     document.getElementById('sdk-card-growth'),
-    scale:      document.getElementById('sdk-card-scale'),
-    enterprise: document.getElementById('sdk-card-enterprise')
-  };
-
-  var tiers = {
-    community:  { label: 'Community',  amount: '€0',          period: '/ month',        desc: 'Free up to 2,000 opens/month · Flinker branding included', cls: 'rec-community' },
-    growth:     { label: 'Growth',     amount: '€300',         period: '/ month annual', desc: 'Up to 3,000 opens/month · white-label · self-serve',        cls: 'rec-growth'    },
-    scale:      { label: 'Scale',      amount: '€750',         period: '/ month annual', desc: 'Up to 10,000 opens/month · white-label · SLA included',      cls: 'rec-scale'     },
-    enterprise: { label: 'Enterprise', amount: 'Contact us',   period: '',               desc: '10,000+ opens/month · custom pricing · volume discounts',    cls: 'rec-enterprise'}
-  };
-
-  /* Map slider 0-100 to opens count */
-  function sliderToOpens(v) {
-    if (v <= 40) return Math.round(v * 50);          /* 0   → 2,000  (community) */
-    if (v <= 60) return Math.round(2000 + (v - 40) * 50);  /* 2,001 → 3,000  (growth)    */
-    if (v <= 80) return Math.round(3000 + (v - 60) * 350); /* 3,001 → 10,000 (scale)     */
-    return 10001;                                    /* enterprise                   */
-  }
-
-  function formatOpens(n) {
-    if (n > 10000) return '10,000+';
-    if (n >= 1000) return n.toLocaleString();
-    return n.toLocaleString();
-  }
-
-  function tierKey(opens) {
-    if (opens <= 2000)  return 'community';
-    if (opens <= 3000)  return 'growth';
-    if (opens <= 10000) return 'scale';
-    return 'enterprise';
-  }
-
-  function update() {
-    var v     = parseInt(slider.value, 10);
-    var opens = sliderToOpens(v);
-    var key   = tierKey(opens);
-    var t     = tiers[key];
-
-    opensDisplay.textContent = formatOpens(opens);
-
-    /* Slider track fill */
-    slider.style.background = 'linear-gradient(to right, #0779FF 0%, #0779FF ' + v + '%, #e2e8f0 ' + v + '%, #e2e8f0 100%)';
-
-    /* Update recommendation box */
-    tierRec.className  = 'tier-rec ' + t.cls;
-    recTier.textContent   = t.label;
-    recDesc.textContent   = t.desc;
-    recAmount.textContent = t.amount;
-    recPeriod.textContent = t.period;
-
-    /* Highlight matching plan card */
-    Object.keys(cards).forEach(function (k) {
-      cards[k].classList.remove('plan-accent');
-    });
-    cards[key].classList.add('plan-accent');
-  }
-
-  slider.addEventListener('input', update);
-  update();
-}());
-</script>
