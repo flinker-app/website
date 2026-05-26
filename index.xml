@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flinker | OpenBIM Apps for Microsoft 365 on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Flinker | OpenBIM Apps for Microsoft 365 on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 22 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Flinker Data Processing Agreement (v2026-05)</title><link>https://flinker.app/legal/dpa/v2026-05/</link><pubDate>Fri, 15 May 2026 00:00:00 +0200</pubDate><guid>https://flinker.app/legal/dpa/v2026-05/</guid><description>&lt;div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flinker | OpenBIM Apps for Microsoft 365 on Flinker | The built-environment layer for Microsoft 365</title><link>https://flinker.app/</link><description>Recent content in Flinker | OpenBIM Apps for Microsoft 365 on Flinker | The built-environment layer for Microsoft 365</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Tue, 26 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Flinker Data Processing Agreement (v2026-05)</title><link>https://flinker.app/legal/dpa/v2026-05/</link><pubDate>Fri, 15 May 2026 00:00:00 +0200</pubDate><guid>https://flinker.app/legal/dpa/v2026-05/</guid><description>&lt;div class="d-flex flex-wrap align-items-center gap-2 mb-3">
  &lt;span class="badge text-bg-primary">Version: v2026-05&lt;/span>
  &lt;span class="badge text-bg-light">Effective date: 2026-05-15&lt;/span>
 &lt;/div>
@@ -604,155 +604,8 @@ Amtsgericht M&amp;uuml;nchen HRB 254870 (hereinafter &amp;ldquo;Processor&amp;rd
  &lt;div class="card-body p-4">
  &lt;i class="bi bi-calculator fs-3 text-primary mb-3">&lt;/i>
  &lt;h5>Quantity Takeoffs&lt;/h5>
- &lt;p class="text-muted mb-0">Extract quantities, areas, volumes, and counts from IFC models using natural language queries like "How many doors are on level 2?"&lt;/p></description></item><item><title>IFC Viewer SDK – Free to Start | Flinker</title><link>https://flinker.app/developers/ifc-viewer/sdk/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/sdk/</guid><description>&lt;style>
+ &lt;p class="text-muted mb-0">Extract quantities, areas, volumes, and counts from IFC models using natural language queries like "How many doors are on level 2?"&lt;/p></description></item><item><title>IFC Viewer SDK – Free Forever, Commercial Use | Flinker</title><link>https://flinker.app/developers/ifc-viewer/sdk/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/developers/ifc-viewer/sdk/</guid><description>&lt;style>
  /* Pricing section scoped styles */
- .calc-card {
- border: 1px solid #e2e8f0;
- border-radius: 16px;
- padding: 40px;
- background: #fff;
- box-shadow: 0 10px 30px rgba(15,23,42,.06);
- position: relative;
- overflow: hidden;
- }
- .calc-card::before {
- content: '';
- position: absolute;
- top: 0; left: 0; right: 0;
- height: 3px;
- background: linear-gradient(90deg, var(--bs-primary), #10b981);
- border-radius: 16px 16px 0 0;
- }
- .calc-label {
- font-size: 12px;
- font-weight: 700;
- color: #64748b;
- letter-spacing: 0.08em;
- text-transform: uppercase;
- margin-bottom: 28px;
- }
- .calc-slider-wrap { margin-bottom: 32px; }
- .calc-slider-header {
- display: flex;
- justify-content: space-between;
- align-items: baseline;
- margin-bottom: 12px;
- }
- .calc-slider-title { font-size: 14px; color: #64748b; }
- .calc-slider-value {
- font-size: 28px;
- font-weight: 700;
- color: var(--bs-emphasis-color, #0f172a);
- transition: color 0.2s;
- }
- .calc-range {
- -webkit-appearance: none;
- width: 100%;
- height: 6px;
- background: #e2e8f0;
- outline: none;
- border-radius: 3px;
- cursor: pointer;
- }
- .calc-range::-webkit-slider-thumb {
- -webkit-appearance: none;
- width: 22px;
- height: 22px;
- background: var(--bs-primary, #007bff);
- border-radius: 50%;
- cursor: pointer;
- transition: transform 0.15s;
- box-shadow: 0 2px 8px rgba(0,123,255,0.3);
- }
- .calc-range::-webkit-slider-thumb:hover { transform: scale(1.15); }
- .calc-range::-moz-range-thumb {
- width: 22px;
- height: 22px;
- background: var(--bs-primary, #007bff);
- border-radius: 50%;
- cursor: pointer;
- border: none;
- box-shadow: 0 2px 8px rgba(0,123,255,0.3);
- }
- .calc-tick-labels {
- display: flex;
- justify-content: space-between;
- margin-top: 8px;
- }
- .calc-tick-labels span {
- font-size: 11px;
- font-weight: 500;
- color: #94a3b8;
- }
- .tier-rec {
- border: 1px solid #e2e8f0;
- border-radius: 16px;
- padding: 24px 28px;
- background: #f8fafc;
- display: flex;
- align-items: center;
- justify-content: space-between;
- gap: 16px;
- transition: all 0.3s ease;
- }
- .tier-rec.rec-community {
- background: rgba(16,185,129,0.06);
- border-color: rgba(16,185,129,0.25);
- }
- .tier-rec.rec-growth {
- background: rgba(7,121,255,0.06);
- border-color: rgba(7,121,255,0.25);
- }
- .tier-rec.rec-scale {
- background: rgba(14,165,233,0.06);
- border-color: rgba(14,165,233,0.25);
- }
- .tier-rec.rec-enterprise {
- background: rgba(100,116,139,0.06);
- border-color: rgba(100,116,139,0.25);
- }
- .rec-label {
- font-size: 12px;
- font-weight: 700;
- color: #64748b;
- letter-spacing: 0.06em;
- text-transform: uppercase;
- margin-bottom: 4px;
- }
- .rec-tier {
- font-size: 24px;
- font-weight: 700;
- color: var(--bs-emphasis-color, #0f172a);
- transition: color 0.3s;
- }
- .tier-rec.rec-community .rec-tier { color: #10b981; }
- .tier-rec.rec-growth .rec-tier { color: #0779FF; }
- .tier-rec.rec-scale .rec-tier { color: #0ea5e9; }
- .tier-rec.rec-enterprise .rec-tier { color: #64748b; }
- .rec-desc {
- font-size: 13px;
- color: #64748b;
- line-height: 1.5;
- margin-top: 2px;
- }
- .rec-amount {
- font-size: 44px;
- font-weight: 700;
- line-height: 1;
- color: var(--bs-primary, #007bff);
- transition: all 0.3s ease;
- }
- .tier-rec.rec-community .rec-amount { color: #10b981; }
- .tier-rec.rec-growth .rec-amount { color: #0779FF; }
- .tier-rec.rec-scale .rec-amount { color: #0ea5e9; }
- .tier-rec.rec-enterprise .rec-amount { color: #64748b; font-size: 28px; }
- .rec-period {
- font-size: 13px;
- font-weight: 500;
- color: #94a3b8;
- margin-top: 4px;
- text-align: right;
- }
  /* Plan cards */
  .plan {
  border: 1px solid #e2e8f0;
@@ -767,9 +620,23 @@ Amtsgericht M&amp;uuml;nchen HRB 254870 (hereinafter &amp;ldquo;Processor&amp;rd
  transform: translateY(-3px);
  box-shadow: 0 14px 36px rgba(15,23,42,.1);
  }
+ .card-lift {
+ transition: transform .2s ease, box-shadow .2s ease;
+ }
+ .card-lift:hover {
+ transform: translateY(-4px);
+ box-shadow: 0 12px 32px rgba(15,23,42,.10) !important;
+ }
  .plan-accent {
  border: 2px solid var(--bs-primary, #007bff);
  box-shadow: 0 10px 30px rgba(0,123,255,.12);
+ }
+ .chevron-arrow .bi-chevron-down {
+ transition: transform .2s ease;
+ display: inline-block;
+ }
+ a[aria-expanded="true"] .chevron-arrow .bi-chevron-down {
+ transform: rotate(180deg);
  }
  .plan-badge {
  position: absolute;
@@ -887,10 +754,6 @@ Amtsgericht M&amp;uuml;nchen HRB 254870 (hereinafter &amp;ldquo;Processor&amp;rd
  .demo-iframe-wrap { overflow: hidden; background: #0f172a; }
  .demo-iframe-wrap iframe { display: block; border: none; }
  @media (max-width: 768px) {
- .calc-card { padding: 24px 18px; }
- .tier-rec { flex-direction: column; align-items: flex-start; }
- .rec-amount { font-size: 36px; }
- .rec-period { text-align: left; }
  .sdk-code-block { padding: 18px 16px; }
  .ai-prompt-block { padding: 18px 16px; }
  .demo-browser-bar .demo-url-bar { display: none; }
@@ -904,14 +767,16 @@ Amtsgericht M&amp;uuml;nchen HRB 254870 (hereinafter &amp;ldquo;Processor&amp;rd
 &lt;!-- ═══════════════════════════════════════════════════════════════════
  HERO
  ═══════════════════════════════════════════════════════════════════ -->
-&lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
+&lt;section class="pt-lg-8 pt-5 pb-lg-8 pb-5 bg-primary bg-opacity-10 position-relative">
  &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
  &lt;div class="container">
- &lt;div class="row align-items-center py-lg-8">
- &lt;div class="col-lg-8 offset-lg-2 text-center">
- &lt;span class="badge bg-primary mb-3">IFC Viewer SDK&lt;/span>
- &lt;h1 class="display-5">Embed a complete IFC viewer in any web app&lt;/h1>
- &lt;p class="lead">The Community plan is a permanent commercial tier. Use it for free up to 2,000 opens per month. No credit card, no npm install, no upload backend.&lt;/p></description></item><item><title>Integrations | Connect Flinker with Your Tools</title><link>https://flinker.app/integrations/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/integrations/</guid><description>&lt;!-- Hero Section -->
+ &lt;div class="row align-items-center g-5 flex-lg-nowrap">
+
+ &lt;!-- Left: copy -->
+ &lt;div class="col-lg-5 col-12">
+ &lt;span class="badge bg-primary mb-4">IFC Viewer SDK&lt;/span>
+ &lt;h1 class="display-5 mb-3">Embed a complete IFC viewer in any app&lt;/h1>
+ &lt;p class="lead mb-5">Free forever, commercial use included. Up to 2,000 opens/month.&lt;/p></description></item><item><title>Integrations | Connect Flinker with Your Tools</title><link>https://flinker.app/integrations/</link><pubDate>Sat, 14 Feb 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/integrations/</guid><description>&lt;!-- Hero Section -->
 &lt;section class="py-md-10 pt-5 bg-primary bg-opacity-10 position-relative">
  &lt;div class="position-absolute top-0 start-0 end-0" style="height: 80px; background: linear-gradient(to bottom, rgba(0,0,0,0.35), transparent); pointer-events: none; z-index: 0;">&lt;/div>
  &lt;div class="container">

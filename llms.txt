@@ -6,7 +6,7 @@
 
 The Flinker IFC Viewer SDK is the fastest way to embed a complete, production-ready IFC viewer into a web application.
 
-- Free Community plan: up to 2,000 viewer opens/month, no account required, no npm install
+- Community tier: free forever with commercial use included, up to 2,000 viewer opens/month, no account required, no npm install
 - Import one CDN ES module: `https://cdn.flinker.app/ifc-viewer/v3.3.0/ifc-viewer.es.js`
 - IFC files are processed locally in the browser — never uploaded to a server
 - Supports IFC 2x3, IFC4, IFC4x3, BCF 2.1 & 3, IDS 1.0
