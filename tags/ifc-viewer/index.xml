@@ -119,5 +119,5 @@
  &lt;div class="col-lg-5 col-md-6 col-12">
  &lt;small class="text-primary text-uppercase ls-md fw-semibold">Microsoft 365–native &lt;span class="badge bg-primary-subtle text-primary ms-1">Direct-from-IFC&lt;/span>&lt;/small>
  &lt;div class="mb-5 mt-4">
- &lt;h2 class="mb-3">Open IFC from SharePoint &amp; Teams — no extra logins.&lt;a href="#load-from-sharepoint" class="anchor-link" title="Copy link">&lt;i class="bi bi-link-45deg">&lt;/i>&lt;/a>&lt;/h2>
+ &lt;h2 class="mb-3">Open IFC from SharePoint &amp; Explorer — no extra logins.&lt;a href="#load-from-sharepoint" class="anchor-link" title="Copy link">&lt;i class="bi bi-link-45deg">&lt;/i>&lt;/a>&lt;/h2>
  &lt;p class="lead mb-0">Point to a file or folder in your tenant. The Viewer reads IFC directly — no exports, no CSV staging, no mapping.&lt;/p></description></item></channel></rss>
