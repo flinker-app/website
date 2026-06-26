@@ -16,15 +16,333 @@ sitemap:
 ---
 
 <style>
-   /* Hero height without JS-induced reflows */
-   #get-started { min-height: 70vh; }
-   @media (min-width: 1200px) { #get-started { min-height: 100vh; } }
+   :root {
+      --hero-font-display: "Segoe UI Variable Display", "Segoe UI Variable Text", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      --hero-font-text: "Segoe UI Variable Text", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      --hero-h1-size: clamp(2.2rem, 5.35vw, 4.45rem);
+      --hero-h1-line: 1.05;
+      --hero-h1-track: -0.019em;
+      --hero-sub-size: clamp(1rem, 1.2vw, 1.34rem);
+      --hero-sub-line: 1.4;
+      --hero-sub-track: -0.003em;
+      --index-display4-size: clamp(1.95rem, 3.35vw, 2.95rem);
+      --index-display6-size: clamp(1.56rem, 2.32vw, 2.1rem);
+      --index-section-title-line: 1.1;
+      --index-section-title-track: -0.015em;
+   }
 
-   /* Keep outline-light legible on dark hero */
-   .hero-agency .btn.btn-outline-light {
+   /* Hero typography tuned to Segoe/Fluent-like proportions */
+   #get-started {
+      min-height: 80vh;
+      isolation: isolate;
+      display: block !important;
+      overflow: visible;
+      font-family: var(--hero-font-text);
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+   }
+
+   @media (min-width: 1200px) {
+      #get-started { min-height: 88vh; }
+   }
+
+   #get-started .hero-bg-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background:
+         linear-gradient(99deg, rgba(7,24,53,.88) 0%, rgba(7,24,53,.74) 36%, rgba(7,24,53,.48) 63%, rgba(7,24,53,.3) 84%, rgba(7,24,53,.26) 100%),
+         linear-gradient(180deg, rgba(7,24,53,.18) 0%, rgba(7,24,53,.3) 100%);
+   }
+
+   #get-started .hero-inner {
+      position: relative;
+      z-index: 2;
+      min-height: inherit;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: clamp(84px, 9vw, 122px);
+      padding-bottom: clamp(56px, 8vw, 98px);
+   }
+
+   #get-started .hero-shell {
+      width: min(1260px, calc(100% - clamp(40px, 6vw, 96px)));
+      margin-inline: auto;
+   }
+
+   #get-started .hero-panel {
+      width: 100%;
+      max-width: 690px;
+   }
+
+   #get-started .hero-eyebrow {
+      display: inline-block;
+      margin-bottom: .74rem;
+      font-size: clamp(.82rem, .82vw, .94rem);
+      font-weight: 590;
+      letter-spacing: .082em;
+      color: rgba(255,255,255,.94);
+      text-transform: uppercase;
+      font-family: var(--hero-font-text);
+   }
+
+   #get-started h1 {
+      margin: 0 0 .95rem;
+      max-width: 11.5ch;
+      font-size: var(--hero-h1-size);
+      line-height: var(--hero-h1-line);
+      letter-spacing: var(--hero-h1-track);
+      font-weight: 620;
+      text-wrap: balance;
+      font-family: var(--hero-font-display);
+   }
+
+   #get-started h1.display-3 {
+      font-size: var(--hero-h1-size);
+      line-height: var(--hero-h1-line);
+      letter-spacing: var(--hero-h1-track);
+      font-weight: 620;
+   }
+
+   #get-started .hero-sub {
+      max-width: 31ch;
+      margin: 0;
+      font-size: var(--hero-sub-size);
+      line-height: var(--hero-sub-line);
+      letter-spacing: var(--hero-sub-track);
+      font-weight: 410;
+      color: rgba(255,255,255,.9);
+      font-family: var(--hero-font-text);
+   }
+
+   #get-started .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: clamp(1.08rem, 1.8vw, 1.5rem);
+   }
+
+   #get-started .hero-cta .btn {
+      min-height: 50px;
+      padding: .7rem 1.22rem;
+      border-radius: .75rem;
+      font-weight: 600;
+      letter-spacing: -.003em;
+      font-family: var(--hero-font-text);
+   }
+
+   #get-started .hero-cta .btn-outline-light {
       --bs-btn-color: #fff;
-      --bs-btn-border-color: rgba(255,255,255,.9);
-      --bs-btn-hover-bg: rgba(255,255,255,.12);
+      --bs-btn-border-color: rgba(255,255,255,.76);
+      --bs-btn-hover-bg: rgba(255,255,255,.14);
+   }
+
+   #get-started .hero-rating-wrap {
+      margin-top: clamp(.72rem, 1.05vw, .95rem);
+   }
+
+   #get-started .hero-rating {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: .24rem .44rem;
+      width: 100%;
+      font-size: clamp(.82rem, .86vw, .94rem);
+      line-height: 1.24;
+      letter-spacing: -.001em;
+      color: rgba(233,239,248,.76);
+      font-family: var(--hero-font-text);
+   }
+
+   #get-started .hero-rating .rating-kicker {
+      font-weight: 440;
+      white-space: nowrap;
+   }
+
+   #get-started .hero-rating .rating-score {
+      font-weight: 590;
+      color: rgba(255,255,255,.9);
+      white-space: nowrap;
+   }
+
+   #get-started .hero-rating .rating-source {
+      opacity: .76;
+      white-space: nowrap;
+   }
+
+   #get-started .hero-rating .rating-link {
+      color: rgba(255,255,255,.86);
+      font-weight: 560;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,.38);
+      white-space: nowrap;
+   }
+
+   #get-started .hero-rating .rating-link:hover {
+      color: #fff;
+      border-bottom-color: rgba(255,255,255,.62);
+   }
+
+   /* Homepage typography harmony layer (index only) */
+   section h1,
+   section h2,
+   section .h1 {
+      font-family: var(--hero-font-display);
+      font-weight: 620;
+      letter-spacing: -0.014em;
+      text-wrap: balance;
+   }
+
+   section h2 {
+      line-height: 1.12;
+   }
+
+   section h2.display-4 {
+      font-size: var(--index-display4-size);
+      line-height: 1.08;
+      letter-spacing: -0.018em;
+   }
+
+   section h2.display-6 {
+      font-size: var(--index-display6-size);
+      line-height: var(--index-section-title-line);
+      letter-spacing: var(--index-section-title-track);
+   }
+
+   section h2.section-title {
+      font-family: var(--hero-font-display);
+      font-weight: 620;
+      line-height: var(--index-section-title-line);
+      letter-spacing: var(--index-section-title-track);
+      text-wrap: balance;
+   }
+
+   section .text-uppercase.ls-lg,
+   section small.text-uppercase.ls-lg,
+   section .hero-eyebrow {
+      font-family: var(--hero-font-text);
+      font-weight: 590;
+      letter-spacing: .078em;
+   }
+
+   section p.lead,
+   section .hero-sub,
+   section .section-subtitle {
+      font-family: var(--hero-font-text);
+      font-weight: 410;
+      letter-spacing: -0.003em;
+      line-height: 1.4;
+   }
+
+   section .section-subtitle {
+      font-size: clamp(1rem, 1.16vw, 1.22rem);
+      color: inherit;
+   }
+
+   #community .section-subtitle,
+   #get-started .section-subtitle,
+   .bg-primary .section-subtitle,
+   .text-white-stable.section-subtitle {
+      color: rgba(255,255,255,.88);
+   }
+
+   @supports (font-variation-settings: normal) {
+      section h1,
+      section h2,
+      section .h1 { font-variation-settings: "wght" 620; }
+      section .text-uppercase.ls-lg,
+      section small.text-uppercase.ls-lg,
+      section .hero-eyebrow { font-variation-settings: "wght" 590; }
+      section p.lead,
+      section .hero-sub,
+      section .section-subtitle { font-variation-settings: "wght" 410; }
+      section h2.section-title { font-variation-settings: "wght" 620; }
+   }
+
+   @supports (font-variation-settings: normal) {
+      #get-started .hero-eyebrow { font-variation-settings: "wght" 590; }
+      #get-started h1,
+      #get-started h1.display-3 { font-variation-settings: "wght" 620; }
+      #get-started .hero-sub { font-variation-settings: "wght" 410; }
+      #get-started .hero-cta .btn { font-variation-settings: "wght" 600; }
+      #get-started .hero-rating .rating-score { font-variation-settings: "wght" 590; }
+      #get-started .hero-rating .rating-link { font-variation-settings: "wght" 560; }
+   }
+
+   @media (max-width: 991.98px) {
+      #get-started {
+         min-height: auto;
+         overflow-x: clip;
+      }
+
+      #get-started .hero-inner {
+         align-items: flex-start;
+         padding-top: clamp(82px, 14vw, 106px);
+         padding-bottom: 1.3rem;
+      }
+
+      #get-started .hero-shell {
+         width: 100%;
+         margin: 0;
+         padding: 0 1rem;
+         box-sizing: border-box;
+      }
+
+      #get-started .hero-panel {
+         max-width: 640px;
+      }
+
+      #get-started h1 {
+         max-width: 12ch;
+         --hero-h1-size: clamp(2rem, 7.2vw, 3.32rem);
+      }
+
+      #get-started .hero-sub {
+         max-width: 33ch;
+         --hero-sub-size: 1rem;
+         --hero-sub-line: 1.38;
+      }
+
+      #get-started .hero-rating {
+         gap: .22rem .42rem;
+      }
+   }
+
+   @media (max-width: 575.98px) {
+      #get-started .hero-shell {
+         padding: 0 .85rem;
+      }
+
+      #get-started h1 {
+         --hero-h1-size: clamp(1.92rem, 8.9vw, 2.85rem);
+      }
+
+      #get-started .hero-sub {
+         --hero-sub-size: .96rem;
+      }
+
+      #get-started .hero-cta {
+         flex-direction: column;
+         align-items: stretch;
+      }
+
+      #get-started .hero-cta .btn {
+         width: 100%;
+      }
+
+      #get-started .hero-rating {
+         gap: .2rem .36rem;
+      }
+
+      #get-started .hero-rating .rating-link {
+         width: 100%;
+         white-space: normal;
+      }
    }
 
    /* Respect reduced motion: tone down parallax */
@@ -34,48 +352,31 @@ sitemap:
 </style>
 
 <!--hero start-->
-<section id="get-started" class="position-relative py-10 jarallax hero-agency" data-jarallax data-speed="0.4">
+<section id="get-started" class="position-relative jarallax hero-agency" data-jarallax data-speed="0.4">
    <img class="jarallax-img w-100" src="./assets-flinker/images/landings/landing-img-9.svg" alt="agency" loading="eager" fetchpriority="high" decoding="async"
       style="object-fit: cover; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-position: center;" />
-   <div class="position-absolute start-0 end-0">
-      <div class="container">
-         <div class="row">
-            <div class="col-xl-5 col-lg-7 col-12" data-cue="zoomIn">
-               <div class="text-center text-lg-start">
-                  <div class="mb-4 text-white-stable">
-                     <small class="text-uppercase ls-lg">Native Microsoft Solutions</small>
-                     <h1 class="mb-3 mt-3 display-3 text-white-stable">The built environment layer for Microsoft</h1>
-                     <p class="lead mb-0">Self-hosted OpenBIM inside Microsoft 365 — connecting design, data and systems. Secure. Enterprise-grade.</p>
-                  </div>
-                  <a href="#clients" class="btn btn-primary">Explore</a>
-                  <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" aria-label="Talk to an Expert (book a call)" class="btn btn-outline-light ms-2" style="color:#fff;border-color:rgba(255,255,255,0.9);background-color:transparent;">Talk to an Expert</a>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
+   <div class="hero-bg-overlay" aria-hidden="true"></div>
 
-   <!-- Reviews bar in hero (stars + AppSource link) -->
-   <div class="position-absolute start-0 end-0 bottom-0" data-cue="fadeIn">
-      <div class="container">
-         <div class="row">
-            <div class="d-flex flex-row flex-wrap gap-2 align-items-center justify-content-center justify-content-md-start lh-1 py-3"
-               style="width: 100%;">
-               <span class="text-white-stable fs-6">Rated Excellent</span>
-               <div>
-                  <img src="./assets/images/mobile-app/star.svg" alt="star">
-                  <img src="./assets/images/mobile-app/star.svg" alt="star">
-                  <img src="./assets/images/mobile-app/star.svg" alt="star">
-                  <img src="./assets/images/mobile-app/star.svg" alt="star">
-                  <!-- 0.8 filled star to represent 4.8 rating -->
-                  <span class="position-relative d-inline-block align-middle" aria-hidden="true">
-                     <img src="./assets/images/mobile-app/star-light.svg" alt="star background">
-                     <img src="./assets/images/mobile-app/star.svg" alt="star 80% filled" class="position-absolute top-0 start-0" style="width: 100%; height: 100%; clip-path: inset(0 20% 0 0);">
-                  </span>
-                  <span class="visually-hidden">4.8 out of 5 stars</span>
+   <div class="hero-inner">
+      <div class="hero-shell">
+         <div class="hero-panel text-start">
+            <div class="mb-4 text-white-stable">
+               <small class="text-uppercase ls-lg hero-eyebrow">Native Microsoft Solutions</small>
+               <h1 class="mb-3 mt-3 display-3 text-white-stable">The built environment layer for Microsoft</h1>
+               <p class="lead mb-0 hero-sub">Self-hosted OpenBIM inside Microsoft 365, connecting design, data and systems. Secure. Enterprise-grade.</p>
+            </div>
+            <div class="hero-cta">
+               <a href="#clients" class="btn btn-primary">Explore</a>
+               <a href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/" aria-label="Talk to an Expert (book a call)" class="btn btn-outline-light">Talk to an Expert</a>
+            </div>
+
+            <div class="hero-rating-wrap">
+               <div class="hero-rating">
+                  <span class="rating-kicker">Rated</span>
+                  <span class="rating-score">4.8/5</span>
+                  <span class="rating-source">on</span>
+                  <a href="https://appsource.microsoft.com/de-de/marketplace/apps?search=flinker&page=1" target="_blank" class="lh-1 rating-link">Microsoft AppSource</a>
                </div>
-               <span class="text-white-stable">on</span>
-               <a href="https://appsource.microsoft.com/de-de/marketplace/apps?search=flinker&page=1" target="_blank" class="lh-1 text-white-stable fw-bold">Microsoft AppSource</a>
             </div>
          </div>
       </div>
@@ -91,8 +392,8 @@ sitemap:
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1" data-cue="zoomIn">
         <div class="text-center text-white-stable">
           <small class="text-uppercase ls-lg fw-semibold">OpenBIM • Microsoft 365 • Ecosystem</small>
-          <h2 class="display-4 mt-3 mb-3 text-white-stable">Building the #1 OpenBIM community for Microsoft 365</h2>
-          <p class="lead text-opacity-75 mb-5 px-lg-7">
+          <h2 class="display-4 mt-3 mb-3 text-white-stable section-title">Building the #1 OpenBIM community for Microsoft 365</h2>
+          <p class="lead text-opacity-75 mb-5 px-lg-7 section-subtitle">
             Build on IFC, BCF and IDS, all inside Microsoft 365. Open to partners, integrators, and developers. Join the movement and grow with us.
           </p>
           <!-- Note: replace with your MS Form or a /community page if desired -->
@@ -206,8 +507,8 @@ sitemap:
                      class="badge bg-white text-muted border border-light-subtle rounded-pill text-uppercase fw-semibold py-2 px-3 small ls-md">Security</span>
                </div>
                <div class="d-flex flex-column gap-2">
-                  <h2 class="mb-0 display-6">Your Security is Our Priority</h2>
-                  <p class="mb-0">
+                  <h2 class="mb-0 display-6 section-title">Your Security is Our Priority</h2>
+                  <p class="mb-0 section-subtitle">
                      We believe that you should always have complete ownership and control of your data and processing. We deliver
                      app solutions that run self-hosted in your existing Microsoft environment.
                   </p>
@@ -454,7 +755,7 @@ sitemap:
                   </span>
                </div>
                <div class="d-flex flex-column gap-2">
-                  <h2 class="mb-0 display-6">openBIM Standards</h2>
+                  <h2 class="mb-0 display-6 section-title">openBIM Standards</h2>
                   <p class="mb-0">
                      Build with Flinker in Microsoft 365 with buildingSMART’s openBIM standards so you can confidently share and manage project
                      data — work smoother. Work independently. Stay flexible. 
