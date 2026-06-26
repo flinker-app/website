@@ -221,7 +221,7 @@ schema:
       <div class="col-lg-5 col-md-6 col-12">
         <small class="text-primary text-uppercase ls-md fw-semibold">Microsoft 365–native <span class="badge bg-primary-subtle text-primary ms-1">Direct-from-IFC</span></small>
         <div class="mb-5 mt-4">
-          <h2 class="mb-3">Open IFC from SharePoint & Teams — no extra logins.<a href="#load-from-sharepoint" class="anchor-link" title="Copy link"><i class="bi bi-link-45deg"></i></a></h2>
+          <h2 class="mb-3">Open IFC from SharePoint & Explorer — no extra logins.<a href="#load-from-sharepoint" class="anchor-link" title="Copy link"><i class="bi bi-link-45deg"></i></a></h2>
           <p class="lead mb-0">Point to a file or folder in your tenant. The Viewer reads IFC directly — no exports, no CSV staging, no mapping.</p>
         </div>
         <ul class="list-unstyled mb-5">
@@ -302,7 +302,7 @@ schema:
         <small class="text-primary text-uppercase ls-md fw-semibold">Visualization <span class="badge bg-primary-subtle text-primary ms-1">Pro</span></small>
         <div class="mb-5 mt-4">
           <h2 class="mb-3">See what matters with Color-by.<a href="#color-by" class="anchor-link" title="Copy link"><i class="bi bi-link-45deg"></i></a></h2>
-          <p class="lead mb-0">Visualize by status, system, level, or any custom field — insights appear at a glance.</p>
+          <p class="lead mb-0">Visualize by status, system, level, or any custom logic — insights appear at a glance.</p>
         </div>
         <ul class="list-unstyled mb-0">
           <li class="mb-2 d-flex"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i>Status, Level, System, or any property</li>
@@ -320,8 +320,8 @@ schema:
     <small class="text-primary text-uppercase fw-semibold">Direct-from-IFC</small>
     <h2 class="mt-2 mb-2 fw-bold">From IFC file to dashboard — instantly<a href="#direct-from-ifc" class="anchor-link" title="Copy link"><i class="bi bi-link-45deg"></i></a></h2>
     <p class="text-muted mb-4" style="max-width:720px;margin:0 auto;">
-      Flinker loads your IFC model directly into Power BI.  
-      No exports, no extra files — just point to your SharePoint or Teams folder and start analyzing.
+      The Open IFC Viewer Visual loads your IFC model directly into Power BI.
+      No exports, no extra files — just point to your SharePoint or local desktop folders and start analyzing.
     </p>
 
     <figure class="position-relative">
@@ -345,15 +345,14 @@ schema:
         What you get with the IFC Viewer<a href="#features" class="anchor-link" title="Copy link"><i class="bi bi-link-45deg"></i></a>
       </h2>
       <p class="text-muted" style="margin:0 auto; max-width:720px; color:#64748b;">
-        From SharePoint-native storage to advanced Pro tools, build reports faster and share them across your team.
+        From SharePoint-native storage to multi-model coordination and data extension, build reports faster and share them across your team.
       </p>
 
-      </p>
     </div>
 
     <!-- Feature cards -->
     <div style="display:grid; gap:32px; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));">
-      
+
       <!-- SharePoint-first integration -->
       <article style="border:1px solid #e2e8f0; border-radius:16px; padding:20px;">
         <div style="font-size:28px; color:var(--bs-primary,#0d6efd); margin-bottom:12px;">
@@ -361,7 +360,7 @@ schema:
         </div>
         <h3 style="font-size:18px; margin:0 0 8px;">SharePoint-first, Microsoft 365-native</h3>
         <p class="text-muted" style="margin:0; color:#64748b;">
-          Keep data in your tenant. Connect IFC files from SharePoint/Teams with zero extra logins.
+          Keep data in your tenant. Connect IFC files from SharePoint/Teams/Windows Explorer with zero extra logins.
         </p>
       </article>
 
@@ -370,20 +369,9 @@ schema:
         <div style="font-size:28px; color:var(--bs-primary,#0d6efd); margin-bottom:12px;">
           <i class="bi bi-layers"></i>
         </div>
-        <h3 style="font-size:18px; margin:0 0 8px;">Multi-IFC loading (Pro)</h3>
+        <h3 style="font-size:18px; margin:0 0 8px;">Multi-IFC loading</h3>
         <p class="text-muted" style="margin:0; color:#64748b;">
           Combine multiple models or link folders to a single report for holistic coordination.
-        </p>
-      </article>
-
-      <!-- Extended query / data extension -->
-      <article style="border:1px solid #e2e8f0; border-radius:16px; padding:20px;">
-        <div style="font-size:28px; color:var(--bs-primary,#0d6efd); margin-bottom:12px;">
-          <i class="bi bi-database"></i>
-        </div>
-        <h3 style="font-size:18px; margin:0 0 8px;">Extended query / data extension (Pro)</h3>
-        <p class="text-muted" style="margin:0; color:#64748b;">
-          Enrich IFC attributes, join cost and schedule tables, and build reusable BIM data logic.
         </p>
       </article>
 
@@ -392,9 +380,20 @@ schema:
         <div style="font-size:28px; color:var(--bs-primary,#0d6efd); margin-bottom:12px;">
           <i class="bi bi-palette"></i>
         </div>
-        <h3 style="font-size:18px; margin:0 0 8px;">Color-by features (Pro)</h3>
+        <h3 style="font-size:18px; margin:0 0 8px;">Color-by features</h3>
         <p class="text-muted" style="margin:0; color:#64748b;">
           Visualize by status, system, level, or custom fields to surface insights at a glance.
+        </p>
+      </article>
+
+      <!-- Data extension -->
+      <article style="border:1px solid #e2e8f0; border-radius:16px; padding:20px;">
+        <div style="font-size:28px; color:var(--bs-primary,#0d6efd); margin-bottom:12px;">
+          <i class="bi bi-database"></i>
+        </div>
+        <h3 style="font-size:18px; margin:0 0 8px;">Data extension</h3>
+        <p class="text-muted" style="margin:0; color:#64748b;">
+          Enrich IFC attributes, join cost and schedule tables, and build reusable BIM data logic.
         </p>
       </article>
     </div>
@@ -408,7 +407,7 @@ schema:
       <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
         <div class="text-center mb-4">
           <h2 id="trusted-by" class="mb-1">Trusted by BIM and data teams<a href="#trusted-by" class="anchor-link" title="Copy link"><i class="bi bi-link-45deg"></i></a></h2>
-          <p class="mb-0 text-muted">Used by teams across construction, engineering, and real estate worldwide</p>
+          <p class="mb-0 text-muted">Used by teams across construction, engineering, fabrication &amp; real estate worldwide</p>
         </div>
       </div>
       {{< pbi-user-logos title="false" >}}
@@ -769,18 +768,15 @@ schema:
       </tbody>
     </table>
 
-    <p class="note" style="margin:14px 6px 0;">
-      <strong>Tip:</strong> Works with any cloud drive that syncs to Windows Explorer (ACC, Dalux, BIMcollab, Trimble, Google, Box, Dropbox, etc.).
-    </p>
+    <div style="margin:20px 0 0; padding:12px 16px; background:var(--bs-primary-bg-subtle,#e7f1ff); border-left:3px solid var(--bs-primary,#0d6efd); border-radius:8px; font-size:13.5px; color:var(--bs-emphasis-color,#0f172a);">
+      <i class="bi bi-plug-fill" style="color:var(--bs-primary,#0d6efd); margin-right:6px;"></i>
+      <strong>Works with any cloud drive</strong> that syncs to Windows Explorer — ACC, Dalux, BIMcollab, Trimble, Google Drive, Box, Dropbox, and more. No extra setup needed.
+    </div>
 
     <!-- Notes -->
-    <div style="margin-top:30px; font-size:14px; color:var(--bs-secondary-color);">
-      <p><strong>Notes:</strong></p>
+    <div style="margin-top:30px; font-size:13px; color:var(--bs-secondary-color);">
       <ul style="margin:0 0 0 20px; padding:0;">
-        <li>Community is designed for Power BI Desktop. Sharing in Power BI Service starts with Business.</li>
-        <li>Business is per-user, licensed via Microsoft AppSource and assigned in your Microsoft 365 admin center. Each person who views or edits a report in Power BI Service needs their own license.</li>
-        <li>Enterprise is per-tenant for organization-wide internal use, and covers embedded, API-scale, or commercial deployment &#8212; talk to sales for a quote scoped to your tenant.</li>
-        <li><span class="mez-tag">.mez</span> The .mez connector is a separate module, included with Enterprise or available standalone. It enables folder loading and full IFC property extraction, also for use without the visual. <a class="link-muted" href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" target="_blank" rel="noopener">Talk to sales</a>.</li>
+        <li><span class="mez-tag">.mez</span> The <strong>.mez connector</strong> is a Power Query extension for full IFC attribute extraction — all properties, faster parsing, 100% local inside your tenant. It works independently of the visual: ideal for data engineers who want to load IFC data directly into Power BI dataflows, pipelines, or semantic models without rendering a 3D view. Available as an optional add-on with Enterprise, or as a standalone license. <a class="link-muted" href="https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true" target="_blank" rel="noopener">Talk to sales</a>.</li>
         <li>Prices exclude VAT. Annual billing available.</li>
       </ul>
     </div>
@@ -799,13 +795,10 @@ schema:
           <div class="p-4 p-lg-5">
             <h5 class="fw-semibold mb-3">Flinker IFC Visual licensing</h5>
             <p class="text-muted mb-2" style="font-size:15px;">
-              Every user who views or edits Flinker IFC Visual reports on Power BI Service needs a license. With <strong>Business</strong>, each user is licensed individually via Microsoft AppSource and assigned in your admin center.
-            </p>
-            <p class="text-muted mb-2" style="font-size:15px;">
-              With <strong>Enterprise</strong>, a single per-tenant license covers all editors and MS365 viewers across your organization &#8212; <em>no per-user fees</em>. External viewers (e.g., embedded public reports) do not require additional licensing.
+              <strong>Business</strong> is per user. Each person who opens a report in Power BI Service needs their own license, purchased via Microsoft AppSource and assigned in admin.microsoft.com.
             </p>
             <p class="text-muted mb-0" style="font-size:15px;">
-              Business fits teams sharing in Power BI Service. For organization-wide, embedded, or commercial deployment, Enterprise licensing applies.
+              <strong>Enterprise</strong> is per tenant. One license covers all editors and MS365 users in your organization. External viewers in embedded scenarios require no additional licensing.
             </p>
           </div>
         </div>
@@ -816,13 +809,13 @@ schema:
 
 
 <!-- HOW IT WORKS -->
-<section id="how-it-works" class="py-8 bg-light">
+<section id="how-it-works" class="py-8">
   <div class="container" style="max-width:1120px;">
     <div class="text-center mb-6">
       <small class="text-uppercase text-primary fw-bold ls-md">How it works</small>
-      <h2 class="mt-2 mb-0">Get started in three simple steps<a href="#how-it-works" class="anchor-link" title="Copy link"><i class="bi bi-link-45deg"></i></a></h2>
+      <h2 class="mt-2 mb-0">One step to get started<a href="#how-it-works" class="anchor-link" title="Copy link"><i class="bi bi-link-45deg"></i></a></h2>
       <p class="text-muted mt-2 mb-0" style="max-width:680px;margin:0 auto;">
-        Everything happens inside your Microsoft 365 tenant — no external setup, no extra accounts.
+        Everything runs inside your Microsoft 365 tenant. No external setup required.
       </p>
     </div>
 
@@ -834,11 +827,9 @@ schema:
              style="width:64px;height:64px;font-size:28px;">
           <i class="bi bi-download"></i>
         </div>
-        <h4 class="fw-semibold">Start Free in Power BI Desktop</h4>
-        <p class="text-muted mb-0" style="max-width:320px;margin:0 auto;">
-          Install from <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer" target="_blank" rel="noopener">AppSource</a> 
-          or open our <a href="https://docs.flinker.app/docs/ifc-viewer-installation-for-power-bi.html" target="_blank">sample PBIX</a>.  
-          The Community plan works fully offline — no signup needed.
+        <h4 class="fw-semibold">Use for free</h4>
+        <p class="text-muted mb-0" style="max-width:280px;margin:0 auto;">
+          Install from <a href="https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer" target="_blank" rel="noopener">AppSource</a> or open the <a href="https://docs.flinker.app/docs/ifc-viewer-installation-for-power-bi.html" target="_blank">sample PBIX</a>. No signup needed.
         </p>
       </div>
 
@@ -846,11 +837,11 @@ schema:
       <div class="col-md-4">
         <div class="d-inline-flex justify-content-center align-items-center rounded-circle bg-primary bg-opacity-10 text-primary shadow-sm mb-3"
              style="width:64px;height:64px;font-size:28px;">
-          <i class="bi bi-stars"></i>
+          <i class="bi bi-people-fill"></i>
         </div>
-        <h4 class="fw-semibold">Unlock Business Features</h4>
-        <p class="text-muted mb-0" style="max-width:320px;margin:0 auto;">
-          Upgrade to <strong>Business</strong> to share in Power BI Service — or go <strong>Enterprise</strong> for tenant-wide access, large models, and embedded deployment.
+        <h4 class="fw-semibold">Share with Business</h4>
+        <p class="text-muted mb-0" style="max-width:280px;margin:0 auto;">
+          Upgrade to <strong>Business</strong> to publish reports in Power BI Service. Each user gets their own license via AppSource.
         </p>
       </div>
 
@@ -858,12 +849,11 @@ schema:
       <div class="col-md-4">
         <div class="d-inline-flex justify-content-center align-items-center rounded-circle bg-primary bg-opacity-10 text-primary shadow-sm mb-3"
              style="width:64px;height:64px;font-size:28px;">
-          <i class="bi bi-cloud-arrow-up"></i>
+          <i class="bi bi-buildings"></i>
         </div>
-        <h4 class="fw-semibold">Share in Power BI Service</h4>
-        <p class="text-muted mb-0" style="max-width:320px;margin:0 auto;">
-          Enable sharing with <strong>Pro</strong> or <strong>Enterprise</strong> plans —
-          publish to Power BI Service and share securely with all Microsoft 365 viewers.
+        <h4 class="fw-semibold">Scale with Enterprise</h4>
+        <p class="text-muted mb-0" style="max-width:280px;margin:0 auto;">
+          One tenant license covers all editors and MS365 viewers, embedded, and commercial deployment.
         </p>
       </div>
 
@@ -1169,7 +1159,7 @@ schema:
             <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
               <div class="mt-3">
                 Yes. The Community plan lets you use the IFC Viewer in Power BI Desktop with a starter template.
-                You only need to pay when unlocking Pro features or enabling sharing in the Power BI Service.
+                You only need to pay when enabling sharing in the Power BI Service.
               </div>
             </div>
           </div>
@@ -1283,8 +1273,7 @@ schema:
             </h2>
             <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="mt-3">
-                No. Viewers only require a license once you enable Power BI Service sharing.
-                In the Community and Business plans, only editors in Desktop are covered.
+                It depends on the plan. With <strong>Business</strong>, every person who views a report in Power BI Service needs their own license. With <strong>Enterprise</strong>, all MS365 users in your tenant are covered — no per-viewer licensing needed. Community is Desktop-only, so the question does not apply.
               </div>
             </div>
           </div>
@@ -1304,7 +1293,7 @@ schema:
             </h2>
             <div id="faqFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="mt-3">
-                We support credit card payments via Stripe and invoice billing for Pro and Enterprise customers.
+                Business licenses are purchased via Microsoft AppSource (Microsoft billing). For Enterprise, we offer flexible billing — invoice, PO, bank transfer, and custom arrangements. <a href="mailto:sales@flinker.app">Contact sales</a> for details.
               </div>
             </div>
           </div>
@@ -1456,7 +1445,7 @@ schema:
               Free • Runs in your Microsoft 365 tenant
             </span>
           </div>
-          <h2 id="cta" class="text-white-stable mb-3">Use the free IFC Visual on Power BI Desktop<a href="#cta" class="anchor-link" title="Copy link"><i class="bi bi-link-45deg"></i></a></h2>
+          <h2 id="cta" class="text-white-stable mb-3">Use the Community IFC Visual on Power BI Desktop<a href="#cta" class="anchor-link" title="Copy link"><i class="bi bi-link-45deg"></i></a></h2>
           <p class="text-white-50 mb-4">
             Get the Flinker IFC Visual for Power BI from Microsoft AppSource. No external servers. Works right in your tenant.
           </p>
