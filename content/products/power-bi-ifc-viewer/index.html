@@ -1,9 +1,9 @@
 ---
 title: "Flinker IFC Viewer for Power BI — Overview & Pricing"
 slug: power-bi-ifc-viewer
-description: "Bring BIM (IFC) into Microsoft Power BI and SharePoint — 100% inside your Microsoft 365 tenant. Start free in Desktop, scale with Pro or Enterprise."
+description: "Bring BIM (IFC) into Microsoft Power BI and SharePoint — 100% inside your Microsoft 365 tenant. Start free with Community, share with Business, or scale org-wide with Enterprise."
 date: 2025-09-23
-lastmod: 2026-02-16
+lastmod: 2026-06-29
 draft: false
 url: "/products/power-bi-ifc-viewer/"
 layout: "single"
@@ -37,7 +37,7 @@ solutions:
   - IFC Viewer
   - Power BI Integration
   - SharePoint Integration
-industry: ["Construction", "Engineering", "Real Estate"]
+industry: ["Construction", "Engineering", "Fabrication", "Real Estate"]
 content_type: "product_page"
 disableTopSpacing: false
 sitemap:
@@ -49,10 +49,10 @@ ai_summary:
   one_liner: "IFC Viewer visual for Power BI that runs entirely inside your Microsoft 365 tenant."
   value_props:
     - "SharePoint-first, MS365-native — no external servers"
-    - "Multi-IFC loading (Pro)"
-    - "Extended query / data extension (Pro)"
-    - "Color-by features for instant insights"
-    - "Unlimited MS365 viewers with Pro"
+    - "Multi-IFC loading"
+    - "Data extension"
+    - "Color-by any field or custom logic"
+    - "All MS365 viewers covered with Enterprise"
   primary_cta:
     label: "Start Free in AppSource"
     url: "https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
@@ -62,13 +62,13 @@ ai_summary:
 
 features:
   - title: "SharePoint-first, Microsoft 365-native"
-    highlight: "Keep models in your tenant; connect from SharePoint/Teams with zero extra logins."
-  - title: "Multi-IFC loading (Pro)"
+    highlight: "Keep models in your tenant; connect from SharePoint/Teams/Windows Explorer with zero extra logins."
+  - title: "Multi-IFC loading"
     highlight: "Combine multiple models and folders in one report for coordination."
-  - title: "Extended query / data extension (Pro)"
+  - title: "Data extension"
     highlight: "Enrich IFC attributes; join cost and schedule data; reuse BIM logic."
-  - title: "Color-by features (Pro)"
-    highlight: "Visualize by status, system, level, or custom fields."
+  - title: "Color-by features"
+    highlight: "Visualize by status, system, level, or custom logic."
 
 plans:
   - name: "Community"
@@ -83,33 +83,36 @@ plans:
       - "Load up to 3 files"
       - "Power BI Desktop only"
     cta:
-      label: "Start free"
+      label: "Use free"
       url: "https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
-  - name: "Pro"
-    price: 299
+  - name: "Business"
+    price_label: "Per user via AppSource"
     currency: "EUR"
     interval: "month"
-    tenant_pricing: true
     includes:
-      - "Everything in Free"
-      - "Folder + subfolder loading (.mez)"
-      - "Large local models up to 10 GB"
-      - "Color-by any field"
+      - "Everything in Community"
       - "Power BI Service supported"
-      - "All MS365 viewers included"
-      - "Unlimited editors per tenant"
+      - "Standard IFC attribute extraction"
+      - "Assigned per user in admin.microsoft.com"
     cta:
-      label: "Buy now"
-      url: "https://buy.stripe.com/8x24gy6aueFCdMU4UDcZa02"
+      label: "Get it on AppSource"
+      url: "https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer?tab=PlansAndPrice"
   - name: "Enterprise"
-    price_label: "Contact us"
+    price_label: "Talk to sales"
     currency: "EUR"
     interval: "month"
     tenant_pricing: true
     includes:
-      - "Everything in Pro"
+      - "Everything in Business"
+      - "Unlimited users per tenant"
+      - "All IFC properties extracted (.mez)"
+      - "Folder + subfolder loading (.mez)"
+      - "Performant local parsing 15 GB+ (.mez)"
       - "Unlimited model size via API"
       - "Power BI Embedded supported"
+      - "Commercial & multi-project deployment rights"
+      - "Support, rollout & SLA options"
+      - "Invoice & PO payment supported"
     cta:
       label: "Get Quote"
       url: "https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true"
@@ -119,6 +122,7 @@ integrations:
   - "Power BI Service"
   - "SharePoint"
   - "Microsoft Teams"
+  - "Windows Explorer"
   - "Microsoft 365 Single Sign-On"
 
 use_cases:
@@ -126,12 +130,13 @@ use_cases:
   - "Project coordination with multi-model context"
   - "Cost/schedule joining and analytics"
   - "Tenant-native data governance"
+  - "IFC data pipelines and dataflows"
 
 faqs:
   - q: "Does the Community plan support sharing?"
-    a: "No. Sharing in Power BI Service requires Pro or Enterprise."
+    a: "No. Sharing in Power BI Service requires Business or Enterprise."
   - q: "Do viewers need extra licenses?"
-    a: "No. With Pro, all MS365 viewers are covered."
+    a: "With Business, yes — each viewer needs their own license. With Enterprise, all MS365 viewers are covered."
   - q: "Where does data live?"
     a: "In your Microsoft 365 tenant (SharePoint/Teams). No external servers."
 
@@ -140,7 +145,7 @@ schema:
   "@context": "https://schema.org"
   "@type": "Product"
   name: "Flinker IFC Viewer for Power BI"
-  description: "Bring BIM (IFC) into Power BI and SharePoint, 100% tenant-native. Start free, scale with Pro or Enterprise."
+  description: "Bring BIM (IFC) into Power BI and SharePoint, 100% tenant-native. Start free with Community, share with Business, or deploy org-wide with Enterprise."
   brand:
     "@type": "Brand"
     name: "Flinker"
@@ -159,20 +164,19 @@ schema:
       availability: "https://schema.org/InStock"
       url: "https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer"
     - "@type": "Offer"
-      name: "Pro"
-      price: "299"
+      name: "Business"
       priceCurrency: "EUR"
       priceSpecification:
         "@type": "UnitPriceSpecification"
-        unitText: "per tenant per month"
+        unitText: "per user per month"
       availability: "https://schema.org/InStock"
-      url: "https://buy.stripe.com/8x24gy6aueFCdMU4UDcZa02"
+      url: "https://appsource.microsoft.com/en-us/product/power-bi-visuals/flinkergmbh1644589155747.ifc-viewer?tab=PlansAndPrice"
     - "@type": "Offer"
       name: "Enterprise"
       priceSpecification:
         "@type": "UnitPriceSpecification"
         unitText: "contact us"
-      availability: "https://schema.org/PreOrder"
+      availability: "https://schema.org/InStock"
       url: "https://outlook.office365.com/book/SupportConsultingonlinemeeting@flinker.app/?ismsaljsauthenabled=true"
   image: "https://flinker.app/assets-flinker/images/products/power-bi-ifc-viewer/ifc-viewer-hero.png"
   url: "https://flinker.app/products/power-bi-ifc-viewer/"
@@ -552,7 +556,7 @@ schema:
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
-            <span><strong>Unlimited editors</strong> per tenant</span>
+            <span><strong>Unlimited users</strong> per tenant</span>
           </li>
           <li class="d-flex align-items-start" style="gap:10px; margin:0 0 10px;">
             <i class="bi bi-check-circle" style="margin-top:2px; color:var(--bs-secondary-color);"></i>
