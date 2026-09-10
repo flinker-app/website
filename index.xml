@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flinker | OpenBIM solutions for Microsoft on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/</link><description>Recent content in Flinker | OpenBIM solutions for Microsoft on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 02 Sep 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>IFC Viewer Architectures: Where Should Model Processing Live?</title><link>https://flinker.app/blog/ifc-viewer-architectures-model-processing/</link><pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/ifc-viewer-architectures-model-processing/</guid><description>&lt;p>Embedding a BIM viewer into a web application is not only a rendering decision. It establishes a system boundary.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Flinker | OpenBIM solutions for Microsoft on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/</link><description>Recent content in Flinker | OpenBIM solutions for Microsoft on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Thu, 10 Sep 2026 00:00:00 +0200</lastBuildDate><atom:link href="https://flinker.app/index.xml" rel="self" type="application/rss+xml"/><item><title>Flinker Services Terms (v2026-09)</title><link>https://flinker.app/legal/services-terms/v2026-09/</link><pubDate>Thu, 10 Sep 2026 00:00:00 +0200</pubDate><guid>https://flinker.app/legal/services-terms/v2026-09/</guid><description>&lt;h1>Flinker Services Terms (v2026-09)&lt;/h1>
+&lt;div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+ &lt;span class="badge text-bg-primary">Version: v2026-09&lt;/span> ·
+ &lt;span class="badge text-bg-light">Effective date: 2026-09-10&lt;/span>
+&lt;/div>
+&lt;div class="d-flex flex-wrap gap-2 mb-4">
+ &lt;a class="btn btn-outline-dark" href="https://flinker.app/legal/services-terms/">Back to latest&lt;/a>
+ &lt;a class="btn btn-outline-dark" href="https://flinker.app/assets-flinker/legal/Flinker-Services-Terms-v2026-09.pdf" target="_blank" rel="noopener">Download PDF&lt;/a>
+ &lt;a class="btn btn-outline-dark" href="#" onclick="window.print(); return false;">Print&lt;/a>
+&lt;/div>
+&lt;p>&lt;strong>What&amp;rsquo;s new in v2026-09:&lt;/strong> Schedule B.4 (Early Access, Beta and Preview Programmes) is added. Section 1 (Scope, contract documents and precedence) and Section 14 (Liability) are restated. B.2 remains reserved.&lt;/p>
+&lt;h2 id="table-of-contents">Table of Contents&lt;/h2>
+&lt;ol>
+&lt;li>&lt;a href="#scope-contract-documents-and-precedence">Scope, contract documents and precedence&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#definitions">Definitions&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#deliverables-and-delivery-windows">Deliverables and delivery windows&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#what-is-included-vs-excluded">What is included vs excluded&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#change-control-scope-expansion">Change control (scope expansion)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#support-requests-cases-operating-rules">Support Requests (Cases) — operating rules&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#customer-responsibilities-prerequisites">Customer responsibilities (Prerequisites)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#response-targets-best-effort">Response targets (best effort)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#evaluation-and-production-licenses">Evaluation and production licenses&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#tier-trigger-standard-vs-enterprise-professional-services">Tier trigger (Standard vs Enterprise) — Professional Services&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#fees-invoicing-and-payment">Fees, invoicing, and payment&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#data-and-confidentiality-summary">Data and confidentiality (summary)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#intellectual-property">Intellectual property&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#liability">Liability&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#governing-law-and-venue">Governing law and venue&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;ul>
+&lt;li>&lt;a href="#schedule-b-service-types-delivery-specifications">Schedule B: Service Types &amp;amp; Delivery Specifications&lt;/a>
+&lt;ul>
+&lt;li>&lt;a href="#b1-pilot-setup-engagements">B.1 Pilot &amp;amp; Setup Engagements&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#b2-advisory-engagements-reserved">B.2 Advisory Engagements (reserved)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#b3-implementation-engagements">B.3 Implementation Engagements&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#b4-early-access-beta-and-preview-programmes">B.4 Early Access, Beta and Preview Programmes&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;style>
+ @media print {
+ a.btn, .btn { display: none !important; }
+ .badge { border: 1px solid #ccc !important; }
+ }
+&lt;/style>
+&lt;hr>
+&lt;h2 id="scope-contract-documents-and-precedence">1. Scope, contract documents and precedence&lt;/h2>
+&lt;p>1.1 These Terms govern the professional services, support services and pre-release programmes expressly ordered from Flinker GmbH (“Flinker”) by the business customer identified in the applicable Order (“Customer”). They do not apply to consumer transactions.&lt;/p></description></item><item><title>IFC Viewer Architectures: Where Should Model Processing Live?</title><link>https://flinker.app/blog/ifc-viewer-architectures-model-processing/</link><pubDate>Wed, 02 Sep 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/blog/ifc-viewer-architectures-model-processing/</guid><description>&lt;p>Embedding a BIM viewer into a web application is not only a rendering decision. It establishes a system boundary.&lt;/p>
 &lt;p>The choice affects where source models are processed, which credentials participate in the request path, whether intermediate representations are created, how model revisions propagate, and which components an engineering team must integrate and operate.&lt;/p>
 &lt;p>For IFC-centric applications, one question is especially useful:&lt;/p>
 &lt;p>&lt;strong>Where should IFC model processing live?&lt;/strong>&lt;/p>
