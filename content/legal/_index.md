@@ -55,7 +55,7 @@ layout: "mdpage"
     <div class="col-12 col-md-6">
       <div class="card border-0 shadow-sm h-100">
         <div class="card-body p-4">
-          <h5 class="card-title mb-2">Flinker Services Terms</h5>
+          <h5 class="card-title mb-2">Services Terms</h5>
           <p class="card-text text-muted mb-3">Current version and archive.</p>
           <a class="link-primary" href="/legal/services-terms/">Open</a>
         </div>
@@ -64,7 +64,7 @@ layout: "mdpage"
     <div class="col-12 col-md-6">
       <div class="card border-0 shadow-sm h-100">
         <div class="card-body p-4">
-          <h5 class="card-title mb-2">Support Plans — Schedule A</h5>
+          <h5 class="card-title mb-2">Support Plans Schedule A</h5>
           <p class="card-text text-muted mb-3">Enterprise Basic/Plus and Success Hours.</p>
           <a class="link-primary" href="/legal/support-plans/">Open</a>
         </div>
