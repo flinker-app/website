@@ -2,9 +2,12 @@
 
 Place versioned legal PDFs here so they are served by Hugo under `/assets-flinker/legal/...`.
 
-Expected (current):
-- `Flinker-Services-Terms-v2026-01.pdf`
+Current DPA:
+- `Flinker-DPA-v2026-11.pdf`
+
+Other versioned legal PDFs:
+- Keep prior versions available when publishing a new version.
+- Update the corresponding content page's `pdf_path` when publishing a new PDF.
 
 Notes:
 - Keep filenames stable once published.
-- When publishing a new version (e.g. `v2026-02`), add the new PDF and update the `pdf_path` in the corresponding content page.
