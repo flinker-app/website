@@ -1,6 +1,6 @@
 ---
 title: "Free IFC Viewer SDK for JavaScript"
-description: "Free JavaScript IFC Viewer SDK. Unlimited local, non-commercial development for individual developers. Community: 500 requests/month in production."
+description: "Free JavaScript IFC Viewer SDK. Unlimited local, non-commercial development. Community: 500 requests/month per app in production, via Flinker CDN."
 date: 2026-02-14
 lastmod: 2026-09-02
 url: "/developers/ifc-viewer/sdk/"
@@ -18,7 +18,7 @@ keywords:
   - no copyleft IFC SDK
   - embed IFC viewer
   - browser IFC viewer SDK
-  - self-hosted IFC viewer SDK
+  - Enterprise self-hosted IFC viewer SDK
   - IFC BCF IDS viewer
   - React IFC viewer
   - Vue IFC viewer
@@ -735,7 +735,6 @@ breadcrumb:
                <div class="plan-per">/ month · annual billing</div>
                <hr>
                <ul class="list-unstyled mb-4">
-                  <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Microsoft 365 connectors — BCF storage in SharePoint</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Everything in Community</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success mt-1 me-2"></i><span class="text-muted small">Email support</span></li>
                   <li class="mb-2 d-flex align-items-start"><i class="bi bi-info-circle-fill text-warning mt-1 me-2"></i><span class="text-muted small">Flinker branding required</span></li>
@@ -928,7 +927,15 @@ Do not upload the IFC file to a backend just to view it.</pre>
                   </h3>
                   <div id="sdkFaq2" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
                      <div class="mt-3 text-muted">
-                        Yes. All plans include commercial use, and there is no copyleft requirement — your own code stays yours. You can embed the viewer in a product you sell and run that product under your own domain. Community and Pro use the standard Flinker CDN distribution and require Flinker branding to remain visible. White-label use and on-premise or private cloud deployment are available with Enterprise. Standalone SDK redistribution or other custom distribution terms require an Enterprise agreement.
+                        <p>Yes. Community and Pro permit:</p>
+                        <ol class="mb-3">
+                           <li>Use via the Flinker CDN, unmodified.</li>
+                           <li>Inside your own application that you operate yourself. Each further application needs its own plan.</li>
+                           <li>On domains and subdomains you control, including subdomains for your customers.</li>
+                           <li>Use by your users and customers inside that application.</li>
+                           <li>Flinker branding visible and unchanged.</li>
+                        </ol>
+                        <p class="mb-0">Requests from all domains of the application count together. The licensee is the company that operates the application, also when an agency builds it. Everything else, including customer-owned domains or infrastructure, self-hosting, white-label, or providing the viewer to other software vendors or their products, requires an Enterprise agreement.</p>
                      </div>
                   </div>
                </div>
@@ -970,7 +977,7 @@ Do not upload the IFC file to a backend just to view it.</pre>
                   </h3>
                   <div id="sdkFaq5" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
                      <div class="mt-3 text-muted">
-                        A request is counted when a viewer session loads. The number of IFC, BCF, or IDS files opened within that session does not matter — loading a federated model of nine files counts as one request. Reloading the page counts as a new request. Local development on localhost is not counted.
+                        A request is counted when a viewer session loads. The number of IFC, BCF, or IDS files opened within that session does not matter — loading a federated model of nine files counts as one request. Reloading the page counts as a new request. Requests from all domains of the application count together. Local development on localhost is not counted.
                      </div>
                   </div>
                </div>
@@ -1020,13 +1027,13 @@ Do not upload the IFC file to a backend just to view it.</pre>
                <div class="border mb-2 rounded-3 p-3">
                   <h3 class="h5 mb-0">
                      <a href="#" class="text-reset d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#sdkFaq9" aria-expanded="false" aria-controls="sdkFaq9">
-                        What are the Microsoft 365 connectors?
+                        Can I save BCF to SharePoint or my own storage?
                         <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
                      </a>
                   </h3>
                   <div id="sdkFaq9" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
                      <div class="mt-3 text-muted">
-                        Pro and Enterprise include connectors that write viewer data back into Microsoft 365. The first one stores BCF topics directly in SharePoint, so coordination stays in your existing document structure without a separate BCF tool. Creating and loading BCF topics inside the viewer is available in all plans.
+                        Yes. The viewer hands the BCF file to your application through the documented save hook (setSaveTopicsHandler). Your application stores it in SharePoint, your own API or any other storage. Authentication and storage stay in your application. This works in all plans.
                      </div>
                   </div>
                </div>
@@ -1091,22 +1098,23 @@ Do not upload the IFC file to a backend just to view it.</pre>
   "@context": "https://schema.org/",
   "@type": "SoftwareApplication",
   "name": "Flinker IFC Viewer SDK",
-  "description": "JavaScript SDK for embedding a complete IFC viewer in web applications. Free, unlimited localhost development for individual developers, including non-commercial projects. Community includes 500 requests/month in production, commercial use, and no copyleft. Supports IFC 2x3, IFC4, IFC4x3, BCF, and IDS. No npm install, privacy-first, browser-local IFC processing.",
+  "description": "JavaScript SDK for embedding a complete IFC viewer in web applications. Free, unlimited localhost development for individual developers, including non-commercial projects. Community includes 500 requests/month in production per application operated by the licensee company via the unmodified Flinker CDN, with commercial use and no copyleft. Community and Pro require domains and subdomains controlled by the operating company and visible, unchanged Flinker branding; requests across application domains count together. Each further application needs its own plan. The operating company is the licensee, also when an agency builds the application. Other uses require an Enterprise agreement. Supports IFC 2x3, IFC4, IFC4x3, BCF, and IDS. No npm install, privacy-first, browser-local IFC processing.",
   "applicationCategory": "DeveloperApplication",
   "operatingSystem": "Web Browser (Chrome, Edge, Firefox, Safari 16+)",
   "url": "https://flinker.app/developers/ifc-viewer/sdk/",
+  "license": "https://flinker.app/developers/ifc-viewer/sdk/#sdkFaq2",
   "downloadUrl": "https://cdn.flinker.app/ifc-viewer/v3.4.7/ifc-viewer.es.js",
   "installUrl": "https://docs.flinker.app/docs/ifc-viewer-sdk.html",
   "softwareVersion": "3.4.7",
   "releaseNotes": "https://docs.flinker.app/docs/releases.html",
-  "featureList": "IFC viewer, federated BIM model review, model tree, element properties, selection, visibility control, coloring, clipping planes, section views, viewpoints, BCF coordination, IDS validation, local browser processing, Microsoft 365 connectors, SharePoint BCF storage",
+  "featureList": "IFC viewer, federated BIM model review, model tree, element properties, selection, visibility control, coloring, clipping planes, section views, viewpoints, BCF coordination, IDS validation, local browser processing, BCF save hook (setSaveTopicsHandler) in all plans, application-managed authentication and storage (SharePoint, custom API, or other storage)",
   "programmingLanguage": ["JavaScript", "TypeScript"],
   "isAccessibleForFree": true,
   "offers": [
     {
       "@type": "Offer",
       "name": "Community",
-      "description": "Free, unlimited localhost development for individual developers, including non-commercial projects. Production: 500 requests/month, commercial use included. Soft limit: viewer keeps running. No account, API key or credit card. No copyleft. Flinker branding required.",
+      "description": "Free, unlimited localhost development for individual developers, including non-commercial projects. Production: 500 requests/month combined across domains of one application operated by the licensee company, via the unmodified Flinker CDN on controlled domains and subdomains. Commercial use by the application's users and customers included. Each further application needs its own plan. Soft limit: viewer keeps running. No account, API key or credit card. No copyleft. Flinker branding must remain visible and unchanged. Other uses require Enterprise; see the SDK licensing FAQ.",
       "price": "0",
       "priceCurrency": "EUR",
       "availability": "https://schema.org/InStock"
@@ -1114,7 +1122,7 @@ Do not upload the IFC file to a backend just to view it.</pre>
     {
       "@type": "Offer",
       "name": "Pro",
-      "description": "Up to 1,500 requests per month. Annual billing.",
+      "description": "Up to 1,500 requests per month combined across domains of one application operated by the licensee company, via the unmodified Flinker CDN on controlled domains and subdomains. Commercial use by the application's users and customers included. Each further application needs its own plan. Flinker branding must remain visible and unchanged. Other uses require Enterprise; see the SDK licensing FAQ. Annual billing.",
       "price": "300",
       "priceCurrency": "EUR",
       "priceSpecification": {
@@ -1129,7 +1137,7 @@ Do not upload the IFC file to a backend just to view it.</pre>
     {
       "@type": "Offer",
       "name": "Enterprise",
-      "description": "Custom pricing for white-label licensing or over 1,500 requests/month. White-label, priority support, and SLA. Annual billing.",
+      "description": "Custom pricing for usage over 1,500 requests/month or rights beyond Community and Pro, including customer-owned domains or infrastructure, self-hosting, white-label, or providing the viewer to other software vendors or their products. Priority support and SLA. Annual billing.",
       "availability": "https://schema.org/InStock"
     }
   ],
