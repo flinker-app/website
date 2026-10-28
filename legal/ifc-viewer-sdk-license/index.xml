@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IFC Viewer SDK License Terms on Flinker | The built-environment layer for Microsoft</title><link>https://flinker.app/legal/ifc-viewer-sdk-license/</link><description>Recent content in IFC Viewer SDK License Terms on Flinker | The built-environment layer for Microsoft</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Wed, 28 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://flinker.app/legal/ifc-viewer-sdk-license/index.xml" rel="self" type="application/rss+xml"/><item><title>IFC Viewer SDK License Terms (v2026-11)</title><link>https://flinker.app/legal/ifc-viewer-sdk-license/v2026-11/</link><pubDate>Wed, 28 Oct 2026 00:00:00 +0000</pubDate><guid>https://flinker.app/legal/ifc-viewer-sdk-license/v2026-11/</guid><description>&lt;h1>IFC Viewer SDK License Terms (v2026-11)&lt;/h1>
+&lt;div class="d-flex flex-wrap align-items-center gap-2 mb-4">
+ &lt;span class="badge text-bg-primary">Version: v2026-11&lt;/span>
+ &lt;a class="btn btn-outline-dark btn-sm" href="https://flinker.app/legal/ifc-viewer-sdk-license/">Back to latest&lt;/a>
+&lt;/div>
+&lt;div class="p-3 border rounded-3 bg-light mb-4">
+ &lt;strong>Read in particular:&lt;/strong> Section 3 (Permitted use), Section 4 (Uses that require an Enterprise agreement) and Section 3 item 5 (Flinker branding). Plan details and request limits are shown on the &lt;a href="https://flinker.app/developers/ifc-viewer/sdk/#pricing">pricing page&lt;/a>.
+&lt;/div>
+&lt;h2 id="1-scope">1. Scope&lt;/h2>
+&lt;p>These terms govern the use of the Flinker IFC Viewer SDK (&amp;ldquo;SDK&amp;rdquo;) under the Community and Pro plans. Use under the Enterprise plan is governed by a separate written agreement. The &lt;a href="https://flinker.app/terms/">Flinker GmbH Terms &amp;amp; Conditions&lt;/a> apply in addition. Where they conflict, these terms prevail for the SDK.&lt;/p></description></item></channel></rss>
