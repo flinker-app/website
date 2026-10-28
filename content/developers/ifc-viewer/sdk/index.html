@@ -663,14 +663,16 @@ breadcrumb:
          <div class="col-lg-9">
             <div class="sdk-code-block">
                <pre><span class="token-comment">&lt;!-- 1. Add the viewer element --&gt;</span>
-<span class="token-keyword">&lt;bim-grid</span> id=<span class="token-string">"ifc-viewer"</span><span class="token-keyword">&gt;&lt;/bim-grid&gt;</span>
+<span class="token-keyword">&lt;div</span> id=<span class="token-string">"ifc-viewer"</span> style=<span class="token-string">"width:100%;height:600px;"</span><span class="token-keyword">&gt;</span>
+  <span class="token-keyword">&lt;bim-grid</span> style=<span class="token-string">"width:100%;height:100%;"</span><span class="token-keyword">&gt;&lt;/bim-grid&gt;</span>
+<span class="token-keyword">&lt;/div&gt;</span>
 
 <span class="token-keyword">&lt;script</span> type=<span class="token-string">"module"</span><span class="token-keyword">&gt;</span>
   <span class="token-comment">// 2. Import — no npm install required</span>
-  <span class="token-keyword">import</span> { <span class="token-fn">IfcViewer</span> } <span class="token-keyword">from</span> <span class="token-string">"https://cdn.flinker.app/ifc-viewer/v3.4.7/ifc-viewer.es.js"</span>;
+  <span class="token-keyword">import</span> { <span class="token-fn">Viewer</span> } <span class="token-keyword">from</span> <span class="token-string">"https://cdn.flinker.app/ifc-viewer/v4.0.3/ifc-viewer.es.js"</span>;
 
   <span class="token-comment">// 3. Mount and wait for ready</span>
-  <span class="token-keyword">const</span> <span class="token-var">viewer</span> = <span class="token-keyword">new</span> <span class="token-fn">IfcViewer</span>(<span class="token-string">"#ifc-viewer"</span>);
+  <span class="token-keyword">const</span> <span class="token-var">viewer</span> = <span class="token-keyword">new</span> <span class="token-fn">Viewer</span>(<span class="token-string">"#ifc-viewer"</span>);
   <span class="token-keyword">await</span> <span class="token-var">viewer</span>.ready;
 
   <span class="token-comment">// 4. Pass IFC bytes from your app — file never leaves the browser</span>
@@ -854,12 +856,14 @@ breadcrumb:
             <div class="ai-prompt-block">
                <pre>Add a fully working browser IFC viewer with the Flinker IFC Viewer SDK.
 Use this import:
-import { IfcViewer } from "https://cdn.flinker.app/ifc-viewer/v3.4.7/ifc-viewer.es.js";
+import { Viewer } from "https://cdn.flinker.app/ifc-viewer/v4.0.3/ifc-viewer.es.js";
 
-Mount it into a &lt;bim-grid id="ifc-viewer"&gt;&lt;/bim-grid&gt; element.
-Create the viewer with new IfcViewer("#ifc-viewer").
+Mount it into a &lt;div id="ifc-viewer"&gt;&lt;/div&gt; element with a visible width and height.
+Create the viewer with new Viewer("#ifc-viewer").
 Await viewer.ready before loading files.
-Convert IFC, BCF, or fragment files to Uint8Array and call viewer.add(file.name, bytes).
+Pass a File, Blob or Uint8Array to viewer.add(file.name, source).
+Await viewer.IfcAPI for the complete native web-ifc instance. Initialize it and open its models explicitly.
+Use BCF documents for saved component state.
 Do not upload the IFC file to a backend just to view it.</pre>
             </div>
             <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
@@ -913,7 +917,7 @@ Do not upload the IFC file to a backend just to view it.</pre>
                   </h3>
                   <div id="sdkFaq1" class="accordion-collapse collapse" data-bs-parent="#sdkFaq">
                      <div class="mt-3 text-muted">
-                        No. The Community plan works by importing the CDN ES module directly — no account, no API key. Import the module, create <code>new IfcViewer(...)</code>, and you have a working viewer. The Community plan is subject to a 500 requests/month limit and requires Flinker branding to remain visible in the viewer.
+                        No. The Community plan works by importing the CDN ES module directly — no account, no API key. Import the module, create <code>new Viewer(...)</code>, and you have a working viewer. The Community plan is subject to a 500 requests/month limit and requires Flinker branding to remain visible in the viewer.
                      </div>
                   </div>
                </div>
@@ -1103,9 +1107,9 @@ Do not upload the IFC file to a backend just to view it.</pre>
   "operatingSystem": "Web Browser (Chrome, Edge, Firefox, Safari 16+)",
   "url": "https://flinker.app/developers/ifc-viewer/sdk/",
   "license": "https://flinker.app/developers/ifc-viewer/sdk/#sdkFaq2",
-  "downloadUrl": "https://cdn.flinker.app/ifc-viewer/v3.4.7/ifc-viewer.es.js",
+  "downloadUrl": "https://cdn.flinker.app/ifc-viewer/v4.0.3/ifc-viewer.es.js",
   "installUrl": "https://docs.flinker.app/docs/ifc-viewer-sdk.html",
-  "softwareVersion": "3.4.7",
+  "softwareVersion": "4.0.3",
   "releaseNotes": "https://docs.flinker.app/docs/releases.html",
   "featureList": "IFC viewer, federated BIM model review, model tree, element properties, selection, visibility control, coloring, clipping planes, section views, viewpoints, BCF coordination, IDS validation, local browser processing, BCF save hook (setSaveTopicsHandler) in all plans, application-managed authentication and storage (SharePoint, custom API, or other storage)",
   "programmingLanguage": ["JavaScript", "TypeScript"],
